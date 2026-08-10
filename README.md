@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GREEN KNIGHTS OF TECH & AI LTD
 
-## Getting Started
+> **Building Intelligent Technology for Tomorrow**  
+> Official corporate website for Green Knights of Tech & AI Ltd — built with Next.js 16 (Turbopack), React 19, TypeScript, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+---
+
+## 🛡️ About Green Knights of Tech & AI Ltd
+
+Green Knights of Tech & AI Ltd is an enterprise digital transformation, AI engineering, and IT consulting agency. Operating like a modern Round Table, Green Knights provides end-to-end strategy, sovereign AI architecture, cloud infrastructure, cybersecurity, and full-stack software development.
+
+### Enterprise Pillars & Core Services
+1. **AI Solutions**: Generative AI, LLM integration, machine learning, predictive analytics & decision automation.
+2. **Software Development**: High-performance full-stack web and mobile applications using React, Next.js, Python, and Node.js.
+3. **Cloud Solutions**: Multi-cloud migration, DevOps GitOps CI/CD pipelines, and cloud-native architecture (AWS, Azure, GCP).
+4. **Cybersecurity**: Zero-trust architecture, security assessments, vulnerability management & ISO/SOC 2 compliance.
+5. **Digital Transformation**: Enterprise legacy modernization, process automation, and digital reinvention.
+6. **ERP Solutions**: Implementation, customization, and integration of enterprise operational systems.
+7. **IT Consulting**: Strategic technology advisory from experienced CTO-level advisors.
+8. **Data Analytics**: Data engineering, real-time telemetry pipelines, and business intelligence dashboards.
+
+---
+
+## ⚡ Tech Stack & Architecture
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router, Turbopack)
+- **UI & Logic**: [React 19](https://react.dev/), [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) & Vanilla CSS custom design tokens
+- **Animations**: [Framer Motion](https://www.framer-motion.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Interactive Experience**: Interactive Green Round Table 3D-styled service orbit experience
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18.x or higher
+- npm 9.x or higher
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/samarth092006/GREEN-KNIGHT.git
+
+# Navigate to project folder
+cd GREEN-KNIGHT
+
+# Install dependencies
+npm install
+```
+
+### Development Server
+
+Run the development server locally:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create an optimized production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+To start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Linting & Type Checks
 
-## Deploy on Vercel
+```bash
+npm run lint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Repository Structure
+
+```
+website/
+├── public/                     # Public assets (brand vectors, knight artwork, icons)
+│   └── images/
+│       └── brand/             # Official Green Knights logos and knight artwork
+├── src/
+│   ├── app/                    # Next.js App Router pages
+│   │   ├── services/          # Services landing and dynamic [slug] pages
+│   │   ├── technologies/      # Technologies dynamic [slug] pages
+│   │   ├── globals.css        # Theme variables, typography tokens & glassmorphism
+│   │   ├── layout.tsx         # Root layout with metadata and fonts
+│   │   └── page.tsx           # Main homepage
+│   ├── components/            # Reusable UI components & section wrappers
+│   │   ├── roundtable/        # Interactive Round Table experience
+│   │   ├── service/           # Service detail subcomponents & contact forms
+│   │   ├── Hero.tsx           # Homepage hero section
+│   │   ├── Navbar.tsx         # Global navigation header
+│   │   ├── Footer.tsx         # Global footer
+│   │   ├── About.tsx          # About section with knight artwork & pillars
+│   │   └── Services.tsx       # 8 enterprise service pillars grid
+│   ├── data/                  # Service, technology & SEO metadata data sources
+│   └── lib/                   # Icon mappings and utility helpers
+├── package.json
+└── README.md
+```
+
+---
+
+## 📄 License & Copyright
+
+© 2026 **Green Knights of Tech & AI Ltd**. All rights reserved.
