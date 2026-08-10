@@ -1,0 +1,97 @@
+import { ServiceData } from "./index";
+
+export const digitalTransformation: ServiceData = {
+  slug: "digital-transformation",
+  title: "Enterprise Digital Transformation & Process Modernization",
+  tagline: "Reinvent legacy operations into agile, digital-first business engines engineered for market leadership.",
+  category: "Core AI",
+  color: "#145A32",
+  badge: "Strategic Impact",
+  heroStats: [
+    { label: "Process Velocity Increase", value: "3.5x" },
+    { label: "Legacy Code Refactored", value: "5M+ Lines" },
+    { label: "Client Operational Savings", value: "$45M+" },
+    { label: "User Adoption Rate", value: "96%" },
+  ],
+  overview: {
+    summary: "Green Knights leads comprehensive end-to-end digital transformation initiatives that modernize legacy software, streamline workflows, and foster digital culture.",
+    detailedExplanation: "Technology upgrades alone do not guarantee business success. True digital transformation requires aligning software architecture with organizational processes, employee workflows, and customer expectations. Green Knights brings executive-level strategic consulting combined with hands-on engineering to modernize legacy core platforms, eliminate paper-based bottlenecks, and establish agile operational frameworks.",
+    businessProblemsSolved: [
+      "Inability to launch new digital products due to inflexible legacy core systems.",
+      "Siloed departments relying on manual spreadsheet handoffs and paper forms.",
+      "High employee turnover driven by frustrating, slow internal software.",
+      "Customer loss to agile digital-native competitors.",
+    ],
+    architectureOverview: "Event-driven integration layers wrapping legacy mainframes with modern GraphQL/REST micro-frontends, backed by cloud-native microservices and automated process pipelines.",
+    enterpriseUseCases: [
+      "Paperless operational modernization for national insurance providers.",
+      "Core banking legacy mainframe transformation to real-time mobile banking.",
+      "End-to-end digital supply chain visibility for global manufacturing networks.",
+    ],
+  },
+  features: [
+    { title: "Legacy System Modernization", description: "Refactoring legacy mainframes and monolithic applications into agile cloud microservices.", iconName: "RefreshCw" },
+    { title: "Workflow & Process Automation", description: "Replacing manual handoffs with automated digital approval engines and intelligent routing.", iconName: "Sliders" },
+    { title: "Customer Experience (CX) Overhaul", description: "Designing intuitive, ultra-fast web and mobile customer portals.", iconName: "Users" },
+    { title: "API Economy & Ecosystem Integration", description: "Unlocking internal enterprise data via open API platforms for strategic partners.", iconName: "Share2" },
+    { title: "Digital Culture & Change Management", description: "Structured employee training programs to ensure seamless adoption of new digital tools.", iconName: "GraduationCap" },
+    { title: "Omnichannel Digital Strategy", description: "Unifying customer interactions across web, mobile, chat, and physical branch channels.", iconName: "Layout" },
+  ],
+  benefits: [
+    { category: "Automation", title: "Streamlined Workflows", description: "Eliminate repetitive manual entry and reduce internal document processing turnaround times.", metric: "85% Faster Ops" },
+    { category: "ROI", title: "Increased Revenue Velocity", description: "Launch new digital products in weeks instead of multi-year development cycles.", metric: "4x Faster Launch" },
+    { category: "Scalability", title: "Future-Proof Foundation", description: "Build scalable cloud architectures ready for seamless AI and analytics integrations.", metric: "100% Cloud Ready" },
+    { category: "Performance", title: "Superior Customer Satisfaction", description: "Deliver instant digital self-service capabilities that drive NPS scores upward.", metric: "+40 NPS Points" },
+  ],
+  technologies: [
+    { name: "MuleSoft & Apigee", category: "API Management", description: "Enterprise integration and API gateway platforms." },
+    { name: "Camunda & Appian", category: "BPM & Workflow", description: "Business process modeling and automation engines." },
+    { name: "Next.js & Tailwind CSS", category: "Modern Frontend", description: "High-performance customer-facing web portals." },
+    { name: "Node.js & Java Spring", category: "Microservices", description: "Scalable backend microservice runtimes." },
+    { name: "AWS & Azure Cloud", category: "Cloud Platform", description: "Flexible cloud compute and serverless infrastructure." },
+    { name: "Salesforce & SAP Integration", category: "Enterprise Core", description: "Unifying core CRM and ERP business systems." },
+  ],
+  industries: [
+    { industry: "Insurance", title: "Paperless Claims Transformation", useCase: "Digitizing medical and auto insurance claim filings into real-time mobile app submissions.", impact: "Reduced claim turnaround from 14 days to 4 hours." },
+    { industry: "Government", title: "Digital Resident Services Portal", useCase: "Consolidating 18 municipal services into a unified single sign-on citizen portal.", impact: "Serviced 2M citizens with 98% positive rating." },
+    { industry: "Retail", title: "Omnichannel Order Fulfillment", useCase: "Integrating physical store inventory with e-commerce portals for buy-online-pickup-in-store (BOPIS).", impact: "Increased online sales by 42%." },
+  ],
+  whyChooseUs: [
+    { title: "Holistic Transformation Approach", description: "We combine technological expertise, business strategy, and human change management.", iconName: "Compass" },
+    { title: "Proven Track Record", description: "Over 50 successful enterprise digital transformation programs delivered on time.", iconName: "Award" },
+    { title: "Minimal Business Disruption", description: "Strangler fig modernizing pattern ensures continuous business operation throughout migration.", iconName: "ShieldCheck" },
+    { title: "Outcome-Driven Metrics", description: "We tie our project milestones directly to quantifiable business ROI and adoption metrics.", iconName: "BarChart" },
+  ],
+  process: [
+    { phase: "Discover", title: "Digital Maturity & Workflow Audit", duration: "Weeks 1-2", description: "Mapping end-to-end business processes, identifying legacy friction, and establishing baseline KPIs.", deliverables: ["Digital Maturity Report", "Transformation Roadmap"] },
+    { phase: "Planning", title: "Target Architecture & CX Design", duration: "Weeks 3-4", description: "Designing modern target architectures, API wrappers, and user experience wireframes.", deliverables: ["Target Operating Model", "CX Prototypes"] },
+    { phase: "Architecture", title: "API Wrapper & Integration Setup", duration: "Weeks 5-6", description: "Building MuleSoft / GraphQL wrappers around legacy core databases without touching underlying code.", deliverables: ["API Integration Layer"] },
+    { phase: "Development", title: "Micro-Frontend & Process Automation", duration: "Weeks 7-14", description: "Iterative development of customer web portals and automated internal workflow engines.", deliverables: ["Functional Digital Portals"] },
+    { phase: "Testing", title: "User Acceptance & Performance Testing", duration: "Weeks 15-16", description: "Conducting user acceptance testing (UAT) with key business departments and load testing platforms.", deliverables: ["UAT Sign-off", "Performance Audit"] },
+    { phase: "Deployment", title: "Phased Pilot & Full Rollout", duration: "Weeks 17-18", description: "Phased deployment by business unit with comprehensive staff training and live assistance.", deliverables: ["Live Digital Platform", "Training Documentation"] },
+    { phase: "Support", title: "Continuous Optimization & Scaling", duration: "Ongoing", description: "Monitoring adoption analytics, refining user interfaces, and expanding automated processes.", deliverables: ["Adoption Analytics Reports"] },
+  ],
+  caseStudy: {
+    clientType: "National Financial Services Firm",
+    title: "Complete Digital Modernization of Loan Application Systems",
+    problem: "Paper-heavy loan application process took 18 business days, causing high applicant drop-off rates.",
+    solution: "Engineered a modern web application portal integrated with automated credit decisioning APIs and digital document signing.",
+    technologiesUsed: ["Next.js", "TypeScript", "Camunda", "MuleSoft", "AWS Elastic Beanstalk"],
+    businessResults: [
+      { label: "Loan Approval Time", value: "Reduced from 18 Days to 15 Mins" },
+      { label: "Application Conversion Rate", value: "+145%" },
+      { label: "Annual Operational Savings", value: "$6.5M" },
+    ],
+  },
+  faqs: [
+    { question: "How do you modernise legacy systems without disrupting current business operations?", answer: "We utilize the proven 'Strangler Fig' pattern, building modern API wrappers around legacy databases to incrementally migrate functionality slice-by-slice with zero operational downtime." },
+    { question: "How do you handle employee resistance to new digital tools?", answer: "We embed change management specialists into every project phase, conducting early co-design workshops, comprehensive video training, and gamified adoption milestones." },
+    { question: "What is the typical ROI timeframe for a digital transformation initiative?", answer: "Most clients see initial operational cost savings within 6 months of rolling out the first digital phase, with full capital payback achieved within 14-18 months." },
+  ],
+  relatedSlugs: ["software-development", "erp-solutions", "it-consulting"],
+  seo: {
+    metaTitle: "Enterprise Digital Transformation Services | Green Knights",
+    metaDescription: "Modernize legacy systems, automate workflows, and accelerate digital growth with Green Knights of Tech & AI Ltd.",
+    keywords: ["Digital Transformation", "Legacy System Modernization", "Process Automation", "EnterpriseCX"],
+  },
+};

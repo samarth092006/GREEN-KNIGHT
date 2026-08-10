@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #0B6E4F;
+  --color-primary-dark: #145A32;
+  --color-accent: #C9A227;
+  --color-cream: #FFF8DC;
+  --color-cream-dark: #F5EDBC;
+  --color-text: #111827;
+  --color-text-muted: #374151;
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+:root {
+  --primary: #0B6E4F;
+  --primary-dark: #145A32;
+  --accent: #C9A227;
+  --cream: #FFF8DC;
+  --cream-dark: #F5EDBC;
+  --text: #111827;
+  --text-muted: #374151;
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(11, 110, 79, 0.18);
+  --shadow-green: rgba(11, 110, 79, 0.15);
+  --shadow-gold: rgba(201, 162, 39, 0.2);
+
+  /* Centralized High-Readability Typography Scale */
+  --font-size-hero-h1: clamp(2.6rem, 5vw, 4.5rem);
+  --font-size-page-h1: clamp(2.5rem, 4.5vw, 3.75rem);
+  --font-size-h2: clamp(2rem, 3.5vw, 3rem);
+  --font-size-h3: clamp(1.45rem, 2.4vw, 2.15rem);
+  --font-size-h4: clamp(1.25rem, 1.8vw, 1.55rem);
+  --font-size-body-lg: 1.1875rem; /* 19px */
+  --font-size-body: 1.0625rem;    /* 17px */
+  --font-size-button: 1.0625rem;  /* 17px */
+  --font-size-badge: 0.875rem;    /* 14px */
+}
+
+.dark {
+  --cream: #0d1f17;
+  --cream-dark: #0a1a12;
+  --text: #F9FAFB;
+  --text-muted: #E5E7EB;
+  --glass-bg: rgba(11, 110, 79, 0.18);
+  --glass-border: rgba(11, 110, 79, 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.0625rem; /* 17px base size */
+  line-height: 1.75;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0B6E4F 0%, #145A32 100%);
+  border-radius: 4px;
+}
+
+/* Selection */
+::selection {
+  background: rgba(11, 110, 79, 0.25);
+  color: var(--text);
+}
+
+/* Glassmorphism Cards */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(11, 110, 79, 0.16);
+  box-shadow: 0 10px 30px rgba(11, 110, 79, 0.06), 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(11, 110, 79, 0.38);
+  box-shadow: 0 25px 50px rgba(11, 110, 79, 0.16), 0 10px 20px rgba(11, 110, 79, 0.08);
+}
+
+/* Button Shine */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.28) 50%,
+    transparent 70%
+  );
+  transform: rotate(30deg) translateX(-100%);
+  transition: transform 0.8s ease;
+}
+
+.btn-shine:hover::after {
+  transform: rotate(30deg) translateX(100%);
+}
+
+/* Headings */
+.heading-playfair {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: -0.02em;
+}
+
+/* Paragraph Max-Width Utility for Optimal Reading Length (60-80 chars) */
+.readable-width {
+  max-width: 760px;
+}
+
+/* High Contrast Input Fields */
+.input-glass {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(11, 110, 79, 0.25);
+  font-size: 1.0625rem; /* 17px */
+  color: #111827;
+  transition: all 0.2s ease;
+}
+
+.input-glass:focus {
+  background: #ffffff;
+  border-color: #0B6E4F;
+  box-shadow: 0 0 0 4px rgba(11, 110, 79, 0.14);
+  outline: none;
+}

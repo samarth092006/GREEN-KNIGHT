@@ -1,0 +1,97 @@
+import { ServiceData } from "./index";
+
+export const cloudSolutions: ServiceData = {
+  slug: "cloud-solutions",
+  title: "Cloud Architecture, Migration & DevOps Engineering",
+  tagline: "Accelerate digital transformation with resilient AWS, Azure, and Google Cloud infrastructure.",
+  category: "Cloud & Infra",
+  color: "#0B6E4F",
+  badge: "Enterprise Grade",
+  heroStats: [
+    { label: "Cloud Cost Optimization", value: "35% Avg" },
+    { label: "Migrations Completed", value: "180+" },
+    { label: "Uptime SLA Guarantee", value: "99.99%" },
+    { label: "Infrastructure Deployment", value: "<15 Mins" },
+  ],
+  overview: {
+    summary: "Green Knights provides expert multi-cloud migration, cloud-native architecture design, and automated GitOps DevOps engineering.",
+    detailedExplanation: "We help global organizations transition from costly legacy data centers to modern, elastic cloud environments across AWS, Microsoft Azure, and Google Cloud Platform (GCP). Utilizing Infrastructure as Code (IaC) with Terraform and Ansible, we eliminate manual configuration drift and guarantee reproducible, secure environments.",
+    businessProblemsSolved: [
+      "Unpredictable and ballooning monthly cloud bills without clear allocation.",
+      "Legacy data center hardware reaching end-of-life and suffering outages.",
+      "Manual deployment processes resulting in human configuration errors and downtime.",
+      "Inability to scale infrastructure dynamically during unexpected traffic spikes.",
+    ],
+    architectureOverview: "Multi-region active-active Kubernetes clusters configured via Terraform IaC, managed with ArgoCD GitOps, secured by HashiCorp Vault, and monitored with Datadog.",
+    enterpriseUseCases: [
+      "Zero-downtime migration of 500+ virtual machines from physical hardware to AWS.",
+      "Multi-tenant Kubernetes deployment for SaaS enterprises requiring strict isolation.",
+      "Disaster recovery orchestration achieving sub-5 minute RPO and RTO.",
+    ],
+  },
+  features: [
+    { title: "Multi-Cloud Migration", description: "Seamless lift-and-shift or re-platforming migrations to AWS, Azure, and GCP.", iconName: "CloudUpload" },
+    { title: "Infrastructure as Code (IaC)", description: "Automated environment provisioning using Terraform, Pulumi, and CloudFormation.", iconName: "FileCode" },
+    { title: "Kubernetes & Container Orchestration", description: "Production-ready EKS, AKS, and GKE cluster setup with autoscaling.", iconName: "Server" },
+    { title: "Cloud FinOps & Cost Optimization", description: "Rigorous cloud expenditure audits, right-sizing, and reserved instance strategies.", iconName: "DollarSign" },
+    { title: "DevOps & GitOps Pipelines", description: "Automated CI/CD workflows using GitHub Actions, GitLab CI, and ArgoCD.", iconName: "GitMerge" },
+    { title: "Disaster Recovery & High Availability", description: "Multi-region failover architecture ensuring continuous operations during regional cloud outages.", iconName: "RefreshCw" },
+  ],
+  benefits: [
+    { category: "Cost Reduction", title: "Optimized Cloud Spend", description: "Reduce monthly cloud provider bills by up to 40% through automated right-sizing and spot instances.", metric: "-35% Cloud Cost" },
+    { category: "Scalability", title: "Automated Elastic Scaling", description: "Automatically provision compute capacity during unexpected traffic surges.", metric: "Instant Autoscaling" },
+    { category: "Performance", title: "High Availability SLA", description: "Architect zero-single-point-of-failure clusters guaranteeing enterprise uptime.", metric: "99.99% Uptime" },
+    { category: "Security", title: "Zero Trust Cloud Security", description: "Enforce strict IAM policies, encrypted network transit, and continuous compliance checks.", metric: "100% Encrypted" },
+  ],
+  technologies: [
+    { name: "AWS, Azure & GCP", category: "Cloud Providers", description: "Tier-1 public cloud infrastructure platforms." },
+    { name: "Terraform & Pulumi", category: "Infrastructure as Code", description: "Declarative cloud provisioning and state management." },
+    { name: "Kubernetes & Docker", category: "Container Tech", description: "Standard container runtime and orchestration." },
+    { name: "ArgoCD & GitHub Actions", category: "GitOps & CI/CD", description: "Automated cloud deployments directly from version control." },
+    { name: "Datadog & Prometheus", category: "Observability", description: "Real-time metrics, log aggregation, and APM tracing." },
+    { name: "HashiCorp Vault", category: "Secrets Management", description: "Secure credential, key, and certificate storage." },
+  ],
+  industries: [
+    { industry: "Government", title: "Secure GovCloud Migration", useCase: "Migrating legacy state records to isolated AWS GovCloud with FedRAMP compliance.", impact: "Reduced data breach risk by 100%." },
+    { industry: "Finance", title: "High-Frequency Financial Bus", useCase: "Architected multi-region Azure infrastructure supporting low-latency banking transactions.", impact: "Achieved 99.999% availability." },
+    { industry: "Retail", title: "Black Friday Auto-Scaling", useCase: "Implemented automated Kubernetes autoscaling for a top e-commerce brand.", impact: "Handled 15x normal traffic spike with 0 downtime." },
+  ],
+  whyChooseUs: [
+    { title: "AWS & Azure Certified Architects", description: "Our team holds Premier Solutions Architect Professional certifications.", iconName: "Award" },
+    { title: "Zero-Downtime Migration Guarantee", description: "We execute complex cloud migrations without interrupting live business operations.", iconName: "CheckCircle" },
+    { title: "Continuous FinOps Monitoring", description: "We provide monthly cloud cost optimization reviews to prevent cloud bill inflation.", iconName: "TrendingDown" },
+    { title: "24/7 Managed Cloud Ops", description: "Dedicated SRE team monitoring your cloud infrastructure 24/7/365.", iconName: "Clock" },
+  ],
+  process: [
+    { phase: "Discover", title: "Infrastructure Audit", duration: "Week 1", description: "Analyzing current server workloads, dependencies, and monthly spend.", deliverables: ["Cloud Readiness Assessment", "Cost Audit"] },
+    { phase: "Planning", title: "Target Architecture Design", duration: "Week 2", description: "Designing multi-region VPC topologies, IAM security rules, and IaC templates.", deliverables: ["Cloud Architecture Blueprint", "Migration Plan"] },
+    { phase: "Architecture", title: "IaC & Pipeline Setup", duration: "Weeks 3-4", description: "Writing modular Terraform scripts and configuring automated CI/CD runners.", deliverables: ["Terraform Code Base", "CI/CD Pipeline"] },
+    { phase: "Development", title: "Environment Provisioning", duration: "Weeks 5-6", description: "Provisioning dev, staging, and production clusters with automated security guardrails.", deliverables: ["Provisioned Kubernetes Clusters"] },
+    { phase: "Testing", title: "Failover & Performance Drills", duration: "Week 7", description: "Executing simulated regional outages, backup restoration tests, and load stress testing.", deliverables: ["Disaster Recovery Audit Report"] },
+    { phase: "Deployment", title: "Cutover & Live Migration", duration: "Week 8", description: "Executing final database replication sync and DNS cutover to cloud environment.", deliverables: ["Live Cloud Environment", "DNS Switch"] },
+    { phase: "Support", title: "24/7 Managed SRE Support", duration: "Ongoing", description: "Continuous infrastructure monitoring, patch management, and cost optimization.", deliverables: ["SRE Monitoring", "Monthly FinOps Reports"] },
+  ],
+  caseStudy: {
+    clientType: "FinTech Services Platform",
+    title: "Migrating 200+ Servers to AWS EKS with 38% Annual Cost Reduction",
+    problem: "On-premise hardware maintenance costs were soaring while server deployment took up to 3 weeks per environment.",
+    solution: "Architected a fully automated Terraform & AWS EKS infrastructure with GitOps deployment workflows.",
+    technologiesUsed: ["AWS EKS", "Terraform", "ArgoCD", "Datadog", "HashiCorp Vault"],
+    businessResults: [
+      { label: "Annual Infrastructure Savings", value: "38%" },
+      { label: "Deployment Time", value: "From 3 Weeks to 10 Mins" },
+      { label: "System Downtime", value: "Zero Incidents" },
+    ],
+  },
+  faqs: [
+    { question: "Which cloud provider should our company choose (AWS, Azure, or GCP)?", answer: "The choice depends on existing technology commitments, compliance needs, and workload types. We provide unbiased vendor-neutral evaluations to recommend the optimal cloud or hybrid approach." },
+    { question: "Will our services experience downtime during cloud migration?", answer: "No. We utilize database replication links and blue-green DNS cutovers to execute zero-downtime migrations." },
+    { question: "How do you control unexpected cloud cost spikes?", answer: "We implement hard budget caps, automated idle resource termination scripts, and real-time Datadog cost alerting." },
+  ],
+  relatedSlugs: ["cybersecurity", "software-development", "devops-solutions"],
+  seo: {
+    metaTitle: "Cloud Architecture & DevOps Engineering | Green Knights",
+    metaDescription: "Enterprise cloud migration, Kubernetes orchestration, and Infrastructure as Code services by Green Knights of Tech & AI Ltd.",
+    keywords: ["Cloud Solutions", "AWS Migration", "Azure Kubernetes", "Terraform IaC", "DevOps Engineering"],
+  },
+};

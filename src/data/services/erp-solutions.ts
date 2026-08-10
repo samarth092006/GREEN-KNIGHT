@@ -1,0 +1,97 @@
+import { ServiceData } from "./index";
+
+export const erpSolutions: ServiceData = {
+  slug: "erp-solutions",
+  title: "Enterprise ERP Implementation, Integration & Optimization",
+  tagline: "Unify finance, supply chain, HR, and operations into a single real-time enterprise management intelligence engine.",
+  category: "Engineering & ERP",
+  color: "#0B6E4F",
+  badge: "Core Enterprise",
+  heroStats: [
+    { label: "Implementation Success Rate", value: "100%" },
+    { label: "Supply Chain Efficiency", value: "+40%" },
+    { label: "Financial Close Acceleration", value: "5 Days" },
+    { label: "Active ERP Users Managed", value: "150K+" },
+  ],
+  overview: {
+    summary: "Green Knights delivers custom ERP engineering, SAP/Oracle/Odoo implementation, and seamless enterprise system integrations.",
+    detailedExplanation: "Enterprise Resource Planning (ERP) systems form the operational backbone of global businesses. However, over 60% of ERP implementations fail due to poor data migration, inadequate customization, or rigid architectures. Green Knights provides battle-tested ERP implementation methodologies, custom module engineering, real-time data pipelines, and intelligent automated workflows.",
+    businessProblemsSolved: [
+      "Fragmented data silos forcing manual reconciliations between finance, inventory, and sales.",
+      "Outdated legacy ERPs causing slow month-end financial closes taking over 2 weeks.",
+      "Inability to track inventory levels across global multi-warehouse networks in real time.",
+      "Extremely expensive licensing costs for unused ERP modules.",
+    ],
+    architectureOverview: "Modular Cloud ERP (SAP S/4HANA / Odoo / Custom Microservices) connected to data warehouses via Kafka real-time event streams, with automated ETL validation guards.",
+    enterpriseUseCases: [
+      "Global SAP S/4HANA cloud migration for a multi-billion dollar manufacturing firm.",
+      "Custom lightweight ERP engineering for fast-growing mid-market logistics operators.",
+      "Real-time ERP-to-e-commerce inventory and order synchronization engine.",
+    ],
+  },
+  features: [
+    { title: "Custom ERP System Engineering", description: "Bespoke lightweight ERP platforms tailored specifically to your complex business workflows.", iconName: "Cpu" },
+    { title: "SAP & Oracle Integration & Upgrades", description: "Certified implementation, migration, and custom module development for tier-1 ERP suites.", iconName: "Database" },
+    { title: "Real-Time Supply Chain Visibility", description: "Unified tracking of raw materials, warehouse inventory, purchase orders, and shipments.", iconName: "Truck" },
+    { title: "Financial & Accounting Automation", description: "Automated general ledger reconciliations, multi-currency consolidation, and automated invoicing.", iconName: "DollarSign" },
+    { title: "HR & Payroll System Alignment", description: "Streamlined employee onboarding, time tracking, payroll processing, and benefits sync.", iconName: "Users" },
+    { title: "ERP Analytics & Executive Dashboards", description: "Real-time executive reporting dashboards summarizing key enterprise KPIs.", iconName: "BarChart3" },
+  ],
+  benefits: [
+    { category: "ROI", title: "Drastic Financial Close Reduction", description: "Accelerate monthly financial closing timelines from 14 days down to 2 days.", metric: "2-Day Financial Close" },
+    { category: "Automation", title: "Automated Inventory Sync", description: "Maintain 100% real-time accuracy across e-commerce, physical stores, and supply warehouses.", metric: "99.8% Accuracy" },
+    { category: "Cost Reduction", title: "Lower License & Maintenance Costs", description: "Eliminate bloated software licensing by rationalizing ERP module configurations.", metric: "-30% Software Spend" },
+    { category: "Performance", title: "Unified Enterprise Data", description: "Single source of operational truth eliminating conflicting spreadsheet reports.", metric: "1 Central Source" },
+  ],
+  technologies: [
+    { name: "SAP S/4HANA & SAP Business One", category: "Tier-1 ERP", description: "Enterprise-grade financial and operational management suites." },
+    { name: "Odoo Enterprise", category: "Modular ERP Framework", description: "Flexible open-source enterprise resource planning platform." },
+    { name: "PostgreSQL & SAP HANA", category: "In-Memory DB", description: "Ultra-fast database engines processing millions of transactions daily." },
+    { name: "Python & Celery", category: "Task Queues", description: "Asynchronous background task processing for inventory sync." },
+    { name: "Apache Kafka", category: "Event Streaming", description: "Real-time event streaming platform connecting ERP to web portals." },
+    { name: "PowerBI & Tableau", category: "Business Intelligence", description: "Executive reporting and visual analytics dashboards." },
+  ],
+  industries: [
+    { industry: "Manufacturing", title: "Multi-Plant Shop Floor ERP", useCase: "Synchronizing bill of materials (BOM) and machine maintenance across 12 manufacturing plants.", impact: "Increased plant throughput by 24%." },
+    { industry: "Retail", title: "Omnichannel ERP Integration", useCase: "Connecting POS terminals, online Shopify stores, and centralized distribution hubs.", impact: "Eliminated out-of-stock product cancellations." },
+    { industry: "Logistics", title: "Fleet & Warehouse ERP Management", useCase: "Automating dispatch scheduling, fuel accounting, and driver payroll.", impact: "Saved $2.1M in annual fleet operational overhead." },
+  ],
+  whyChooseUs: [
+    { title: "Certified ERP Consultants", description: "Our team includes certified SAP, Oracle, and Odoo technical architects.", iconName: "Award" },
+    { title: "Clean Data Migration Promise", description: "Rigorous ETL auditing ensuring zero loss or corruption of historical transactional data.", iconName: "Database" },
+    { title: "User-First Training Protocols", description: "Custom role-based training programs to ensure smooth operational transition for staff.", iconName: "BookOpen" },
+    { title: "Ongoing 24/7 Managed Support", description: "Dedicated enterprise support desk resolving system issues under strict SLA guidelines.", iconName: "Headphones" },
+  ],
+  process: [
+    { phase: "Discover", title: "ERP Needs & Workflow Blueprinting", duration: "Weeks 1-2", description: "Analyzing financial structures, inventory movement, chart of accounts, and current software gaps.", deliverables: ["ERP Needs Analysis", "Gaps Matrix"] },
+    { phase: "Planning", title: "Solution Design & Module Scoping", duration: "Weeks 3-4", description: "Selecting baseline ERP platforms, scoping custom module extensions, and defining data schemas.", deliverables: ["ERP Master Architecture Blueprint"] },
+    { phase: "Architecture", title: "Data Migration & Sandbox Configuration", duration: "Weeks 5-8", description: "Setting up ERP sandbox instance, mapping historical data fields, and building ETL extraction scripts.", deliverables: ["Clean Data Migration Scripts", "Configured Sandbox"] },
+    { phase: "Development", title: "Custom Module & API Integration", duration: "Weeks 9-16", description: "Developing custom business rules, API connectors to external systems, and executive dashboards.", deliverables: ["Custom ERP Modules", "API Middleware"] },
+    { phase: "Testing", title: "Financial Parallel Run & User Audits", duration: "Weeks 17-18", description: "Executing parallel financial accounting runs to compare legacy ERP output against new ERP system.", deliverables: ["Financial Reconciliation Audit"] },
+    { phase: "Deployment", title: "Go-Live Cutover Execution", duration: "Week 19", description: "Executing weekend data cutover, final balances validation, and live production launch.", deliverables: ["Live Enterprise ERP System"] },
+    { phase: "Support", title: "Hypercare & Ongoing Managed Ops", duration: "Ongoing", description: "Dedicated on-site and remote hypercare support followed by 24/7 SLA maintenance.", deliverables: ["24/7 SLA Support Desk", "System Audits"] },
+  ],
+  caseStudy: {
+    clientType: "Global Industrial Manufacturer",
+    title: "SAP S/4HANA Cloud Implementation across 8 Global Subsidiaries",
+    problem: "Incompatible legacy accounting software across international offices created a 3-week delay in consolidated quarterly reporting.",
+    solution: "Implemented a unified SAP S/4HANA cloud instance with real-time currency conversion and automated inter-company eliminations.",
+    technologiesUsed: ["SAP S/4HANA", "SAP HANA DB", "MuleSoft", "PowerBI", "Azure Cloud"],
+    businessResults: [
+      { label: "Quarterly Financial Consolidation", value: "From 21 Days to 6 Hours" },
+      { label: "Inventory Holding Costs", value: "-28%" },
+      { label: "Global System Uptime", value: "99.99%" },
+    ],
+  },
+  faqs: [
+    { question: "Can we build a custom lightweight ERP instead of paying high SAP license fees?", answer: "Yes! For mid-sized enterprises, we frequently engineer custom microservice ERP platforms using PostgreSQL, Python, and React that cost up to 70% less while fitting your exact workflow needs." },
+    { question: "How do you protect historical transaction records during ERP data migration?", answer: "We perform automated multi-stage ETL validation runs, comparing checksums and transactional balances line-by-line prior to live system cutover." },
+    { question: "How long does a typical enterprise ERP implementation take?", answer: "Custom lightweight ERPs take 3 to 5 months, whereas enterprise SAP/Oracle migrations for multi-entity firms typically range from 6 to 9 months." },
+  ],
+  relatedSlugs: ["digital-transformation", "software-development", "data-analytics"],
+  seo: {
+    metaTitle: "Enterprise ERP Implementation & Integration | Green Knights",
+    metaDescription: "Unify your enterprise operations with SAP, Odoo, and custom ERP solutions built by Green Knights of Tech & AI Ltd.",
+    keywords: ["Enterprise ERP", "SAP Implementation", "Odoo Development", "Supply Chain Automation", "ERP Integration"],
+  },
+};

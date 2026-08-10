@@ -1,0 +1,97 @@
+import { ServiceData } from "./index";
+
+export const cybersecurity: ServiceData = {
+  slug: "cybersecurity",
+  title: "Enterprise Cybersecurity & Managed Defense",
+  tagline: "Fortify your digital fortress with Zero Trust architecture, SOC monitoring, and red team penetration testing.",
+  category: "Security & Analytics",
+  color: "#C9A227",
+  badge: "Critical",
+  heroStats: [
+    { label: "Mean Time to Detect (MTTD)", value: "<3 Mins" },
+    { label: "Security Audits Passed", value: "300+" },
+    { label: "Zero-Day Breaches", value: "0" },
+    { label: "Compliance Rate", value: "100%" },
+  ],
+  overview: {
+    summary: "Green Knights guards your enterprise digital assets with sovereign-grade cybersecurity frameworks, continuous threat monitoring, and proactive vulnerability exploitation defenses.",
+    detailedExplanation: "In an era of sophisticated ransomware networks and AI-driven cyber threats, traditional perimeter security is no longer sufficient. Green Knights implements strict Zero Trust Architecture ('Never Trust, Always Verify'), continuous SIEM/SOAR security operations monitoring, and deep vulnerability penetration testing.",
+    businessProblemsSolved: [
+      "Vulnerability to ransomware, phishing schemes, and credential theft attacks.",
+      "Regulatory non-compliance penalties under GDPR, HIPAA, SOC 2, or ISO 27001.",
+      "Lack of internal security expertise to monitor threats 24 hours a day.",
+      "Inability to detect unauthorized lateral movement within enterprise networks.",
+    ],
+    architectureOverview: "Zero Trust Network Access (ZTNA) paired with CrowdStrike Endpoint Detection, Microsoft Sentinel SIEM, Cloudflare Magic Transit DDoS mitigation, and HashiCorp Vault key management.",
+    enterpriseUseCases: [
+      "24/7 Security Operations Center (SOC) monitoring for global healthcare systems.",
+      "Penetration testing and red-teaming for fintech mobile payment gateways.",
+      "SOC 2 Type II compliance audit preparation and automated control monitoring.",
+    ],
+  },
+  features: [
+    { title: "Zero Trust Architecture Design", description: "Enforcing micro-segmentation, identity-based access controls, and strict privilege management.", iconName: "Lock" },
+    { title: "24/7 Managed SOC & Threat Detection", description: "Real-time SIEM log monitoring and automated threat containment pipelines.", iconName: "ShieldAlert" },
+    { title: "Penetration Testing & Red Teaming", description: "Simulated advanced persistent threat (APT) attacks to uncover hidden network vulnerabilities.", iconName: "Terminal" },
+    { title: "Regulatory Compliance Management", description: "Turnkey compliance readiness for SOC 2 Type II, ISO 27001, HIPAA, and GDPR.", iconName: "FileCheck" },
+    { title: "Identity & Access Management (IAM)", description: "Centralized Okta/Azure AD single sign-on, multi-factor authentication, and privilege lifecycle management.", iconName: "UserCheck" },
+    { title: "Incident Response & Forensics", description: "Rapid-response incident command team executing malware containment and digital forensics.", iconName: "Zap" },
+  ],
+  benefits: [
+    { category: "Security", title: "Uncompromising Defense", description: "Eliminate unauthorized data access and block ransomware threats before infection.", metric: "Zero Breaches" },
+    { category: "ROI", title: "Avoid Costly Breach Penalties", description: "Prevent multi-million dollar regulatory fines and catastrophic brand reputation damage.", metric: "$4.4M Avg Saved" },
+    { category: "Automation", title: "Automated Incident Containment", description: "SOAR playbooks automatically isolate compromised endpoints within seconds.", metric: "<15s Containment" },
+    { category: "Time Saving", title: "Streamlined Compliance Audits", description: "Continuous automated security evidence collection reduces annual audit prep time by 75%.", metric: "-75% Audit Time" },
+  ],
+  technologies: [
+    { name: "CrowdStrike Falcon", category: "EDR Platform", description: "Next-gen endpoint protection and threat intelligence." },
+    { name: "Microsoft Sentinel", category: "SIEM & SOAR", description: "Cloud-native security analytics and threat response." },
+    { name: "Cloudflare Enterprise", category: "Edge Security", description: "WAF, DDoS mitigation, and Zero Trust access." },
+    { name: "Okta & Azure AD", category: "IAM & Identity", description: "Enterprise identity provider and adaptive MFA." },
+    { name: "Burp Suite & Metasploit", category: "Penetration Testing", description: "Ethical hacking frameworks for deep vulnerability assessments." },
+    { name: "Wiz & Palo Alto Prisma", category: "Cloud Security", description: "Agentless cloud security posture management (CSPM)." },
+  ],
+  industries: [
+    { industry: "Healthcare", title: "HIPAA Protected Health Data Security", useCase: "Securing patient records across 40 clinical facilities with end-to-end encryption.", impact: "Achieved 100% HIPAA audit compliance." },
+    { industry: "Finance", title: "Fintech Penetration Audit", useCase: "Conducting ethical hacking exercises against core banking APIs prior to launch.", impact: "Remediated 14 critical zero-day vulnerabilities." },
+    { industry: "Government", title: "Sovereignty & Ransomware Shield", useCase: "Deploying Zero Trust access across 10,000 remote municipal employee endpoints.", impact: "Blocked 1.2M automated cyber attacks monthly." },
+  ],
+  whyChooseUs: [
+    { title: "Certified Ethical Hackers (CEH/CISSP)", description: "Our cyber specialists hold top industry certifications including CISSP, CISM, and OSCP.", iconName: "Shield" },
+    { title: "Real-Time Active Defense", description: "We don't just generate vulnerability reports; our team actively hunts and neutralizes threats.", iconName: "Crosshair" },
+    { title: "Guaranteed Incident Response SLA", description: "Sub-15 minute rapid deployment of forensic responders during suspected breaches.", iconName: "Clock" },
+    { title: "Comprehensive Threat Intelligence", description: "Continuous integration of global threat feeds to block emerging zero-day vulnerabilities.", iconName: "Globe" },
+  ],
+  process: [
+    { phase: "Discover", title: "Security Assessment & Threat Audit", duration: "Week 1", description: "Scanning external attack surfaces, active directory rules, and third-party SaaS risks.", deliverables: ["Vulnerability Matrix", "Threat Profile"] },
+    { phase: "Planning", title: "Zero Trust Architecture Roadmap", duration: "Week 2", description: "Designing network segmentation rules, IAM policies, and incident response playbooks.", deliverables: ["Zero Trust Design Blueprint", "Policy Framework"] },
+    { phase: "Architecture", title: "SIEM & EDR Sensor Deployment", duration: "Weeks 3-4", description: "Installing endpoint detection agents and connecting log sources to central SIEM dashboards.", deliverables: ["Configured SIEM Platform", "EDR Rollout"] },
+    { phase: "Development", title: "SOAR Automation & IAM Integration", duration: "Weeks 5-6", description: "Configuring automated threat isolation playbooks and single sign-on workflows.", deliverables: ["Automated SOAR Workflows", "MFA Portal"] },
+    { phase: "Testing", title: "Red Team Penetration Simulation", duration: "Week 7", description: "Simulating live phishing attacks and external network breaches to test team readiness.", deliverables: ["Penetration Test Report", "Remediation Guide"] },
+    { phase: "Deployment", title: "Compliance Hardening Launch", duration: "Week 8", description: "Finalizing security policies and publishing compliance evidence portals.", deliverables: ["SOC 2 Evidence Package", "Live SOC Monitoring"] },
+    { phase: "Support", title: "24/7 Managed Defense & Threat Hunting", duration: "Ongoing", description: "Continuous vulnerability scanning, SIEM monitoring, and quarterly penetration drills.", deliverables: ["Monthly Threat Audits", "24/7 SOC Feed"] },
+  ],
+  caseStudy: {
+    clientType: "Global Healthcare Provider",
+    title: "Zero Trust Implementation & SOC 2 Certification across 45 Facilities",
+    problem: "Outdated security infrastructure left 12,000 medical devices vulnerable to ransomware and failed initial SOC 2 audit checks.",
+    solution: "Implemented CrowdStrike EDR, Microsoft Sentinel SIEM, and strict Zero Trust network segmentation across all hospital sites.",
+    technologiesUsed: ["CrowdStrike", "Microsoft Sentinel", "Cloudflare ZTNA", "Wiz.io", "Okta"],
+    businessResults: [
+      { label: "SOC 2 Type II Certification", value: "Passed (100% Score)" },
+      { label: "Ransomware Attacks Prevented", value: "100%" },
+      { label: "Incident Detection Time", value: "Under 2 Minutes" },
+    ],
+  },
+  faqs: [
+    { question: "How quickly can your incident response team respond to an active cyber attack?", answer: "Our threat response team initiates active containment protocols within 15 minutes of an incident declaration under our emergency SLA." },
+    { question: "Can you assist our organization in passing SOC 2 Type II or ISO 27001 audits?", answer: "Yes. We manage the complete end-to-end audit readiness process, including policy documentation, technical control implementation, and auditor coordination." },
+    { question: "What is the difference between vulnerability scanning and penetration testing?", answer: "Vulnerability scanning is an automated tool sweep for known software bugs. Penetration testing is a deep, manual ethical hacking exercise conducted by human experts to exploit complex logic flaws." },
+  ],
+  relatedSlugs: ["cloud-solutions", "it-consulting", "software-development"],
+  seo: {
+    metaTitle: "Enterprise Cybersecurity & Managed SOC | Green Knights",
+    metaDescription: "Protect your organization with Zero Trust architecture, 24/7 SOC monitoring, and penetration testing by Green Knights.",
+    keywords: ["Enterprise Cybersecurity", "Managed SOC", "Zero Trust Architecture", "Penetration Testing", "SOC 2 Compliance"],
+  },
+};

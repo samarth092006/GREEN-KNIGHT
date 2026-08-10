@@ -1,0 +1,97 @@
+import { ServiceData } from "./index";
+
+export const softwareDevelopment: ServiceData = {
+  slug: "software-development",
+  title: "Custom Software Engineering & Cloud Native Apps",
+  tagline: "Architecting mission-critical enterprise applications engineered for performance, resilience, and scale.",
+  category: "Engineering & ERP",
+  color: "#145A32",
+  badge: "High Demand",
+  heroStats: [
+    { label: "Code Coverage Standard", value: "95%+" },
+    { label: "Enterprise Projects Built", value: "250+" },
+    { label: "Deployment Velocity", value: "10x" },
+    { label: "System Availability", value: "99.99%" },
+  ],
+  overview: {
+    summary: "Green Knights delivers custom full-stack web platforms, mobile ecosystems, and high-throughput microservice architectures that power market leaders.",
+    detailedExplanation: "We don't build generic web applications. Our software engineering teams craft resilient, scalable software systems using domain-driven design, clean architecture, and modern DevOps pipelines. Whether replacing legacy monolithic monoliths with event-driven microservices or engineering real-time web applications with Next.js and React 19, we adhere to strict engineering standards and automated testing protocols.",
+    businessProblemsSolved: [
+      "Fragile legacy monoliths failing under high transaction spikes.",
+      "High software maintenance costs due to technical debt and spaghetti code.",
+      "Slow feature release velocity delaying critical business initiatives.",
+      "Fragmented user experiences across web, desktop, and mobile channels.",
+    ],
+    architectureOverview: "Modular microservices built with TypeScript/Node.js, Go, and Python, communicating via Kafka/RabbitMQ event buses, backed by PostgreSQL/Redis, and deployed via GitOps on Kubernetes.",
+    enterpriseUseCases: [
+      "High-frequency algorithmic trading dashboards with microsecond data rendering.",
+      "Multi-tenant SaaS platforms serving 5M+ active daily enterprise users.",
+      "Cross-platform healthcare management systems with HIPAA compliance.",
+    ],
+  },
+  features: [
+    { title: "Full-Stack Web Engineering", description: "Next.js, React, Node.js, and TypeScript applications engineered for lighthouse scores above 95.", iconName: "Code2" },
+    { title: "Microservice Architecture", description: "Decoupled, high-throughput microservices designed with domain-driven boundaries.", iconName: "Boxes" },
+    { title: "Mobile Ecosystem Development", description: "Native iOS/Android and cross-platform Flutter/React Native enterprise apps.", iconName: "Smartphone" },
+    { title: "API First & Microservices Integration", description: "REST, GraphQL, and gRPC APIs documented with OpenAPI 3.0 and OpenAPI schemas.", iconName: "Network" },
+    { title: "Legacy Modernisation", description: "Refactoring legacy COBOL, Java 8, or .NET Framework codebases into modern cloud-native apps.", iconName: "RefreshCw" },
+    { title: "Continuous Delivery Pipelines", description: "Automated CI/CD workflows with automated linting, security scans, and blue-green deployments.", iconName: "GitBranch" },
+  ],
+  benefits: [
+    { category: "Scalability", title: "Infinitely Scalable Architecture", description: "System designed to automatically scale from 1,000 to 1,000,000 concurrent requests without downtime.", metric: "10M+ Users" },
+    { category: "Performance", title: "Ultra-Low Latency", description: "Sub-100ms API response rates optimizing user retention and search engine performance.", metric: "<80ms Latency" },
+    { category: "Cost Reduction", title: "Reduced Technical Debt", description: "Clean code practices and strict automated testing reduce post-release bug fixes by 80%.", metric: "-80% Bugs" },
+    { category: "Time Saving", title: "Rapid Time-to-Market", description: "CI/CD automated pipelines enable daily feature deployments rather than quarterly releases.", metric: "Daily Deployments" },
+  ],
+  technologies: [
+    { name: "TypeScript & React 19", category: "Frontend Core", description: "Type-safe UI development with modern server components." },
+    { name: "Next.js (App Router)", category: "Web Framework", description: "Enterprise SSR, SSG, and edge rendering platform." },
+    { name: "Node.js & Go", category: "Backend Runtime", description: "Asynchronous, event-driven, high-performance microservices." },
+    { name: "PostgreSQL & Redis", category: "Data Layer", description: "Relational storage and high-speed in-memory caching." },
+    { name: "Docker & Kubernetes", category: "Containerization", description: "Standardized container packaging and orchestration." },
+    { name: "GraphQL & gRPC", category: "API Protocols", description: "Optimized data fetching and inter-service communications." },
+  ],
+  industries: [
+    { industry: "Finance", title: "Real-Time Trading Desk", useCase: "High-concurrency web application processing real-time stock telemetry via WebSockets.", impact: "Handled 100K updates/sec with zero frame drops." },
+    { industry: "E-Commerce", title: "Global Marketplace Engine", useCase: "Multi-tenant e-commerce platform with automated localized tax and checkout gateways.", impact: "Increased checkout conversion by 28%." },
+    { industry: "Healthcare", title: "Telemedicine Platform", useCase: "HIPAA-compliant WebRTC video consulting portal integrated with EHR databases.", impact: "Connected 500K patients with specialists." },
+  ],
+  whyChooseUs: [
+    { title: "Senior Engineering Staff", description: "100% of our developers are senior engineers with 8+ years of production experience.", iconName: "Users" },
+    { title: "Agile & Transparent", description: "Weekly sprint demos, real-time Jira visibility, and continuous slack communication.", iconName: "Calendar" },
+    { title: "Zero Lock-in Code", description: "You maintain 100% IP ownership with fully documented, clean repository standards.", iconName: "FileCode" },
+    { title: "Security Embedded (DevSecOps)", description: "Automated vulnerability scanning integrated directly into every pull request.", iconName: "Shield" },
+  ],
+  process: [
+    { phase: "Discover", title: "Requirements & Domain Modeling", duration: "Week 1", description: "Mapping core business logic, user journeys, and technical constraints.", deliverables: ["User Story Backlog", "Domain Model Diagram"] },
+    { phase: "Planning", title: "Architecture Blueprint", duration: "Week 2", description: "Defining technology stacks, database schemas, and API contracts.", deliverables: ["System Architecture Specs", "API Schema"] },
+    { phase: "Architecture", title: "Design System & Infrastructure Setup", duration: "Week 3", description: "Establishing component design system, CI/CD runners, and staging environments.", deliverables: ["Figma UI Kit", "Staging Kubernetes Cluster"] },
+    { phase: "Development", title: "Iterative Sprint Builds", duration: "Weeks 4-10", description: "Two-week agile sprints delivering functional feature slices with 95% test coverage.", deliverables: ["Bi-weekly Demo Builds", "Test Suite"] },
+    { phase: "Testing", title: "Load & Penetration Testing", duration: "Week 11", description: "Simulating heavy traffic spikes and third-party penetration testing.", deliverables: ["Load Test Report", "Security Sign-off"] },
+    { phase: "Deployment", title: "Production Zero-Downtime Launch", duration: "Week 12", description: "Executing blue-green deployment strategy to live production cluster.", deliverables: ["Live Application", "Operational Runbook"] },
+    { phase: "Support", title: "Maintenance & Enhancements", duration: "Ongoing", description: "Continuous feature enhancement, dependency updates, and performance optimization.", deliverables: ["SLA Monitoring", "Quarterly Roadmap"] },
+  ],
+  caseStudy: {
+    clientType: "FinTech Enterprise",
+    title: "Re-Engineering Legacy Core Banking Web Platform into Microservices",
+    problem: "Legacy monolith suffered from frequent outages during peak financial quarters and took 6 months to release new payment features.",
+    solution: "Architected a cloud-native Next.js and Go microservices platform with event-driven message queues and zero-downtime CI/CD.",
+    technologiesUsed: ["Next.js", "TypeScript", "Go", "PostgreSQL", "Kafka", "Kubernetes"],
+    businessResults: [
+      { label: "Deployment Frequency", value: "Daily (vs 6 Months)" },
+      { label: "System Latency", value: "72% Reduction" },
+      { label: "App Availability", value: "99.999%" },
+    ],
+  },
+  faqs: [
+    { question: "What software development methodologies do you follow?", answer: "We follow strict Scrum/Agile practices with two-week sprints, daily standups, sprint reviews, and continuous retro sessions." },
+    { question: "Who owns the intellectual property and source code?", answer: "You own 100% of the IP, source code, design assets, and architectural documents upon delivery." },
+    { question: "How do you ensure software quality and maintainability?", answer: "We enforce strict static code analysis (ESLint/SonarQube), compulsory pull request code reviews, and automated unit/integration test suites requiring 90%+ code coverage." },
+  ],
+  relatedSlugs: ["ai-solutions", "cloud-solutions", "cybersecurity"],
+  seo: {
+    metaTitle: "Custom Enterprise Software Engineering | Green Knights",
+    metaDescription: "Build scalable web applications, mobile platforms, and microservices with Green Knights of Tech & AI Ltd.",
+    keywords: ["Custom Software Development", "Next.js Enterprise", "Microservice Architecture", "Full-Stack Development"],
+  },
+};

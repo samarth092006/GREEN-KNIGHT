@@ -1,0 +1,97 @@
+import { ServiceData } from "./index";
+
+export const itConsulting: ServiceData = {
+  slug: "it-consulting",
+  title: "Strategic IT Consulting & Virtual CTO Advisory",
+  tagline: "Align technology roadmaps with core business strategy under experienced fractional CTO and executive leadership.",
+  category: "Strategic Advisory",
+  color: "#C9A227",
+  badge: "Executive Advisory",
+  heroStats: [
+    { label: "CTO Advisory Hours Delivered", value: "10,000+" },
+    { label: "Client CapEx Saved", value: "$30M+" },
+    { label: "M&A Tech Audits Completed", value: "85+" },
+    { label: "Strategic Client Retention", value: "98%" },
+  ],
+  overview: {
+    summary: "Green Knights provides executive CTO advisory, enterprise architecture planning, tech stack audits, and vendor negotiation management.",
+    detailedExplanation: "Navigating complex technology investments requires senior strategic leadership. Many growing organizations struggle with choosing the right software vendors, managing bloated IT budgets, or establishing scalable engineering governance. Green Knights provides Fractional CTO services and senior technology advisors who collaborate directly with CEOs, Boards of Directors, and Private Equity firms to maximize return on technology investment.",
+    businessProblemsSolved: [
+      "Lack of high-level strategic technology vision causing wasted software development spend.",
+      "Inability to evaluate software vendors or negotiate fair enterprise licensing terms.",
+      "Uncertainty regarding tech stack security, compliance, or architecture scalability.",
+      "Technical due diligence challenges during M&A acquisitions or private equity investments.",
+    ],
+    architectureOverview: "Strategic technology governance frameworks leveraging TOGAF architecture models, Wardley mapping, and rigorous software vendor evaluation scoring matrices.",
+    enterpriseUseCases: [
+      "Fractional CTO advisory for Series B scale-ups scaling engineering from 10 to 100 developers.",
+      "M&A technical due diligence for private equity firms acquiring mid-market software companies.",
+      "Enterprise cloud cost and vendor contract renegotiation achieving multi-million dollar savings.",
+    ],
+  },
+  features: [
+    { title: "Fractional CTO & Executive Advisory", description: "Dedicated senior CTO leadership guiding board meetings, technology vision, and hiring decisions.", iconName: "Briefcase" },
+    { title: "Technical Due Diligence for M&A", description: "In-depth code quality, architecture scalability, and security risk audits during acquisitions.", iconName: "Search" },
+    { title: "Enterprise Technology Roadmap Design", description: "Multi-year technical strategic blueprints aligned with revenue and expansion goals.", iconName: "Map" },
+    { title: "Software Vendor Evaluation & Negotiation", description: "Unbiased selection and contract negotiation for enterprise SaaS, cloud, and ERP software.", iconName: "FileCheck" },
+    { title: "IT Governance & Engineering Standards", description: "Establishing agile frameworks, code review standards, and CI/CD governance policies.", iconName: "Compass" },
+    { title: "Cloud & Infrastructure Cost Auditing", description: "Comprehensive FinOps audits identifying redundant software licenses and cloud waste.", iconName: "DollarSign" },
+  ],
+  benefits: [
+    { category: "Cost Reduction", title: "Eliminated Unnecessary Tech Spend", description: "Prevent multi-million dollar mistakes by avoiding bloated vendor contracts and wrong architectures.", metric: "30% CapEx Saved" },
+    { category: "ROI", title: "Maximized Technology ROI", description: "Ensure every dollar invested in software development directly drives measurable revenue growth.", metric: "Measurable Growth" },
+    { category: "Performance", title: "Streamlined Engineering Teams", description: "Implement high-performing engineering practices that double software release velocity.", metric: "2x Velocity" },
+    { category: "Security", title: "De-Risked M&A Acquisitions", description: "Uncover hidden technical debt and security liabilities before committing capital.", metric: "Zero Surprise Risks" },
+  ],
+  technologies: [
+    { name: "TOGAF & Zachman", category: "Architecture Frameworks", description: "Standardized enterprise architecture methodologies." },
+    { name: "Wardley Mapping", category: "Strategic Planning", description: "Mapping value chains and technology evolution landscapes." },
+    { name: "SonarQube & CAST", category: "Code Quality Auditing", description: "Automated static analysis evaluating technical debt." },
+    { name: "Jira Enterprise & Azure DevOps", category: "Governance", description: "Engineering workflow management and delivery tracking." },
+    { name: "AWS & Azure FinOps", category: "Cost Optimization", description: "Cloud cost reporting and budgeting platforms." },
+    { name: "Security Audit Suites", category: "Risk Audit", description: "Comprehensive security risk and compliance frameworks." },
+  ],
+  industries: [
+    { industry: "Finance", title: "Private Equity Technical Due Diligence", useCase: "Conducting 10-day deep code and architecture audits for a $50M software acquisition target.", impact: "Negotiated a $4.5M purchase price reduction based on identified tech debt." },
+    { industry: "Healthcare", title: "Hospital Network CTO Advisory", useCase: "Guiding the board through a multi-year electronic health record (EHR) vendor migration.", impact: "Saved $8M in vendor licensing costs." },
+    { industry: "Retail", title: "E-Commerce Scaling Architecture Strategy", useCase: "Designing modern headless architecture roadmap prior to high-volume holiday peak.", impact: "Handled 300% traffic growth seamlessly." },
+  ],
+  whyChooseUs: [
+    { title: "Veteran CTO Leadership", description: "Our consultants have served as CTOs and VPs of Engineering at Fortune 500 tech firms.", iconName: "UserCheck" },
+    { title: "Unbiased Vendor Neutrality", description: "We do not take kickbacks from vendors; our recommendations are 100% focused on your best interest.", iconName: "Shield" },
+    { title: "Actionable Strategic Blueprints", description: "We deliver concrete technical roadmaps and code rather than abstract slide decks.", iconName: "FileText" },
+    { title: "Flexible Engagement Models", description: "From advisory retainers to project-based M&A audits, we scale to match your needs.", iconName: "Clock" },
+  ],
+  process: [
+    { phase: "Discover", title: "Strategic Audit & Leadership Interviews", duration: "Week 1", description: "Interviewing executive stakeholders, evaluating current engineering velocity, and reviewing tech budgets.", deliverables: ["Technology Health Assessment", "SWOT Audit"] },
+    { phase: "Planning", title: "Architecture & Vendor Analysis", duration: "Week 2", description: "Auditing source code repositories, infrastructure configurations, and software contracts.", deliverables: ["Technical Debt Matrix", "Vendor Evaluation Matrix"] },
+    { phase: "Architecture", title: "Strategic Target Roadmap Blueprint", duration: "Weeks 3-4", description: "Crafting a multi-year technical vision, team hiring plans, and cloud architecture target state.", deliverables: ["3-Year Enterprise IT Strategy"] },
+    { phase: "Development", title: "Governance & Vendor Negotiation", duration: "Weeks 5-8", description: "Assisting in contract negotiations with major vendors and establishing engineering KPIs.", deliverables: ["Renegotiated Vendor Contracts", "Engineering KPIs"] },
+    { phase: "Testing", title: "Milestone & Velocity Benchmarking", duration: "Week 9", description: "Measuring engineering team release velocity and team adherence to new standards.", deliverables: ["Velocity Audit Report"] },
+    { phase: "Deployment", title: "Board Presentation & Execution Kickoff", duration: "Week 10", description: "Presenting findings and strategic plan to Board of Directors and launching execution tracks.", deliverables: ["Board Deck", "Execution Plan"] },
+    { phase: "Support", title: "Fractional CTO Advisory Retainer", duration: "Ongoing", description: "Monthly advisory meetings, architecture design reviews, and ongoing executive guidance.", deliverables: ["Monthly Board Retainer", "Quarterly Reviews"] },
+  ],
+  caseStudy: {
+    clientType: "Private Equity Firm",
+    title: "Technical Due Diligence & Engineering Restructuring for $80M Portfolio Company",
+    problem: "Portfolio software company had stagnant release velocity, frequent server outages, and escalating cloud bills.",
+    solution: "Conducted a complete technical audit, replaced key legacy vendor contracts, and restructured the engineering team into domain-focused squads.",
+    technologiesUsed: ["TOGAF", "SonarQube", "AWS FinOps", "Jira Enterprise", "Wardley Mapping"],
+    businessResults: [
+      { label: "Engineering Velocity Increase", value: "180%" },
+      { label: "Cloud Overhead Reduction", value: "$1.4M Annually" },
+      { label: "System Reliability (MTTR)", value: "85% Faster Recovery" },
+    ],
+  },
+  faqs: [
+    { question: "What is a Fractional CTO and how does it benefit our company?", answer: "A Fractional CTO provides executive-level technology leadership and strategic direction on a part-time or retainer basis, giving you C-suite expertise at a fraction of the cost of a full-time hire." },
+    { question: "How quickly can Green Knights perform a technical due diligence audit for an acquisition?", answer: "Our team can complete comprehensive code, architecture, and security due diligence audits within 7 to 10 business days." },
+    { question: "Do you assist with executive engineering recruitment?", answer: "Yes. We help define role specs, conduct technical interviews, and evaluate senior candidates for VP of Engineering and Lead Architect positions." },
+  ],
+  relatedSlugs: ["digital-transformation", "cybersecurity", "cloud-solutions"],
+  seo: {
+    metaTitle: "Strategic IT Consulting & Fractional CTO | Green Knights",
+    metaDescription: "Drive growth with Fractional CTO advisory, technical due diligence, and enterprise IT strategy from Green Knights of Tech & AI Ltd.",
+    keywords: ["IT Consulting", "Fractional CTO", "Technical Due Diligence", "Enterprise IT Strategy", "Architecture Audit"],
+  },
+};

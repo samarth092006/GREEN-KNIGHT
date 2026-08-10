@@ -1,0 +1,97 @@
+import { ServiceData } from "./index";
+
+export const dataAnalytics: ServiceData = {
+  slug: "data-analytics",
+  title: "Enterprise Data Analytics, Engineering & Business Intelligence",
+  tagline: "Transform fragmented raw data into real-time executive intelligence dashboards and predictive models.",
+  category: "Security & Analytics",
+  color: "#145A32",
+  badge: "High Demand",
+  heroStats: [
+    { label: "Data Pipelines Processed Daily", value: "50TB+" },
+    { label: "Query Speed Acceleration", value: "10x" },
+    { label: "Custom Dashboards Built", value: "400+" },
+    { label: "Data Quality Rate", value: "99.9%" },
+  ],
+  overview: {
+    summary: "Green Knights architects modern data stacks, real-time data warehouses, and interactive executive reporting platforms that turn raw data into strategic advantage.",
+    detailedExplanation: "In modern enterprises, data is abundant but insights are scarce. Fragmented databases, slow SQL queries, and inaccurate manual reports prevent business leaders from making confident, timely decisions. Green Knights builds robust cloud data platforms utilizing Snowflake, Databricks, and dbt to aggregate disparate data sources into a single, clean, and real-time analytical engine.",
+    businessProblemsSolved: [
+      "Decision paralysis caused by conflicting metrics across isolated department spreadsheets.",
+      "Slow analytical queries taking hours or crashing legacy database servers.",
+      "Inability to predict customer churn or seasonal demand trends with accuracy.",
+      "Data compliance risks stemming from unmonitored PII exposure in data lakes.",
+    ],
+    architectureOverview: "Modern Data Stack leveraging Fivetran / Airbyte for ingestion, Snowflake / BigQuery for data warehousing, dbt for transformation modeling, and Tableau / PowerBI / Lightdash for interactive reporting.",
+    enterpriseUseCases: [
+      "Real-time streaming telemetry analytics for global IoT vehicle fleets.",
+      "Customer 360 unified data platform for multi-channel retail brands.",
+      "Automated financial consolidation and executive reporting dashboard for PE firms.",
+    ],
+  },
+  features: [
+    { title: "Modern Data Warehouse Engineering", description: "High-performance Snowflake, Databricks, and BigQuery data warehouse architectures.", iconName: "Database" },
+    { title: "Real-Time ETL & ELT Pipelines", description: "Automated batch and streaming ingestion pipelines connecting all corporate systems.", iconName: "Workflow" },
+    { title: "Business Intelligence & Executive Dashboards", description: "Intuitive PowerBI, Tableau, and custom React charting platforms with role-based access.", iconName: "BarChart3" },
+    { title: "Predictive Analytics & Machine Learning", description: "Statistical churn modeling, lifetime value forecasting, and demand estimation.", iconName: "TrendingUp" },
+    { title: "Data Governance & Quality Control", description: "Automated data testing with Great Expectations, lineage tracking, and PII masking.", iconName: "ShieldCheck" },
+    { title: "Customer Data Platforms (CDP)", description: "Unifying website, mobile app, and CRM interactions into a real-time single customer view.", iconName: "Users" },
+  ],
+  benefits: [
+    { category: "Performance", title: "Sub-Second Executive Reporting", description: "Replace slow 4-hour batch reports with sub-second live interactive dashboards.", metric: "<1s Query Times" },
+    { category: "ROI", title: "Data-Driven Revenue Optimization", description: "Uncover hidden cross-selling opportunities and optimize pricing strategies based on empirical data.", metric: "+18% Revenue" },
+    { category: "Automation", title: "Automated Data Ingestion", description: "Eliminate manual CSV downloads and manual spreadsheet formulas forever.", metric: "100% Automated" },
+    { category: "Security", title: "Governed Enterprise Compliance", description: "Ensure full compliance with GDPR, CCPA, and HIPAA through automated PII encryption.", metric: "Fully Governed" },
+  ],
+  technologies: [
+    { name: "Snowflake & BigQuery", category: "Data Warehouse", description: "Elastic, cloud-native analytical data warehouses." },
+    { name: "Databricks & Apache Spark", category: "Big Data Processing", description: "Unified analytics engine for large-scale data processing and AI." },
+    { name: "dbt (Data Build Tool)", category: "Transformation", description: "SQL-first data transformation and testing framework." },
+    { name: "Apache Airflow & Prefect", category: "Orchestration", description: "Programmatic workflow scheduling and pipeline monitoring." },
+    { name: "PowerBI & Tableau", category: "Visualization", description: "Enterprise dashboarding and visual reporting software." },
+    { name: "Fivetran & Airbyte", category: "Ingestion", description: "Automated connectors syncing SaaS app data into warehouses." },
+  ],
+  industries: [
+    { industry: "Retail", title: "Omnichannel Customer 360", useCase: "Combining online purchase history with physical store loyalty card swipes into Snowflake.", impact: "Increased customer repeat purchases by 32%." },
+    { industry: "Finance", title: "Real-Time Risk & Portfolio Dashboard", useCase: "Streaming live market prices and loan default risk indicators for portfolio managers.", impact: "Reduced bad debt write-offs by $5.2M." },
+    { industry: "Logistics", title: "IoT Supply Chain Fleet Telemetry", useCase: "Ingesting 10,000 sensor feeds every second to optimize delivery routes and fuel burn.", impact: "Saved 1.2M gallons of fuel annually." },
+  ],
+  whyChooseUs: [
+    { title: "Certified Data Architects", description: "Our team includes certified Snowflake, Databricks, and AWS Data Analytics specialists.", iconName: "Award" },
+    { title: "Single Source of Truth", description: "We resolve conflicting internal metrics to ensure every executive relies on identical numbers.", iconName: "CheckCircle" },
+    { title: "Bulletproof Data Quality", description: "Every pipeline includes automated quality assertions; broken data never reaches reports.", iconName: "Shield" },
+    { title: "Scalable Cloud Architecture", description: "Designed to handle petabytes of data growth seamlessly without performance degradation.", iconName: "Layers" },
+  ],
+  process: [
+    { phase: "Discover", title: "Data Sources & KPI Discovery", duration: "Week 1", description: "Cataloging internal SQL databases, SaaS apps, CSV files, and target executive metrics.", deliverables: ["Data Catalog Blueprint", "KPI Matrix"] },
+    { phase: "Planning", title: "Target Data Stack Architecture", duration: "Week 2", description: "Selecting warehouse tech (Snowflake vs BigQuery), designing star schemas, and setting security rules.", deliverables: ["Data Architecture Specs", "Security Model"] },
+    { phase: "Architecture", title: "Warehouse Provisioning & Ingestion", duration: "Weeks 3-4", description: "Setting up cloud data warehouse instances, configuring Fivetran / Airbyte, and loading raw data schemas.", deliverables: ["Configured Data Warehouse", "Ingestion Pipelines"] },
+    { phase: "Development", title: "dbt Modeling & Dashboard Building", duration: "Weeks 5-8", description: "Writing dbt transformation models, building aggregated data marts, and crafting PowerBI / Tableau dashboards.", deliverables: ["dbt Data Models", "Executive Dashboards"] },
+    { phase: "Testing", title: "Data Reconciliation & Load Drills", duration: "Week 9", description: "Reconciling calculated warehouse figures against source databases to guarantee 100% accuracy.", deliverables: ["Data Audit Sign-Off"] },
+    { phase: "Deployment", title: "Executive Dashboard Launch", duration: "Week 10", description: "Publishing live dashboards, setting up role-based security access, and running team training.", deliverables: ["Live BI Portal", "User Documentation"] },
+    { phase: "Support", title: "Continuous Pipeline Optimization", duration: "Ongoing", description: "Monitoring pipeline latency, cost-optimizing warehouse queries, and adding new data connectors.", deliverables: ["Monthly Pipeline Audit", "24/7 SLA"] },
+  ],
+  caseStudy: {
+    clientType: "Global E-Commerce Enterprise",
+    title: "Snowflake & dbt Modern Data Stack for $200M Retailer",
+    problem: "Executives waited 3 days for weekly sales reports due to slow MySQL queries, losing critical promotional momentum.",
+    solution: "Architected a Snowflake data warehouse with automated Airbyte ingestion and dbt data transformations feeding live PowerBI dashboards.",
+    technologiesUsed: ["Snowflake", "dbt", "Airbyte", "PowerBI", "Apache Airflow"],
+    businessResults: [
+      { label: "Report Latency", value: "From 3 Days to 15 Seconds" },
+      { label: "Data Pipeline Reliability", value: "99.98%" },
+      { label: "Annual Marketing ROI Gain", value: "+24%" },
+    ],
+  },
+  faqs: [
+    { question: "What is the difference between ETL and ELT in modern data stacks?", answer: "ETL transforms data before loading it into a storage engine, whereas modern ELT loads raw data directly into powerful cloud warehouses (like Snowflake) and leverages their elastic compute to execute transformations via dbt." },
+    { question: "How do you ensure user privacy and GDPR/HIPAA compliance in data analytics?", answer: "We enforce dynamic data masking, column-level hashing for PII fields, and strict role-based access control (RBAC) within the data warehouse." },
+    { question: "Can we embed custom analytics dashboards directly into our own web application?", answer: "Yes! We build custom React/Next.js analytics portals connected directly to backend data APIs using high-speed charting libraries." },
+  ],
+  relatedSlugs: ["ai-solutions", "it-consulting", "cloud-solutions"],
+  seo: {
+    metaTitle: "Enterprise Data Analytics & Business Intelligence | Green Knights",
+    metaDescription: "Build modern Snowflake data warehouses, automated dbt pipelines, and executive dashboards with Green Knights of Tech & AI Ltd.",
+    keywords: ["Data Analytics", "Snowflake Warehouse", "Business Intelligence", "PowerBI Dashboards", "dbt Transformation"],
+  },
+};
