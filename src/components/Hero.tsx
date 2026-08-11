@@ -157,9 +157,9 @@ export default function Hero() {
             className="flex flex-col items-start text-left"
           >
             {/* Eyebrow badge */}
-            <motion.div variants={fadeUp} className="mb-5 sm:mb-6">
+            <motion.div variants={fadeUp} className="mb-4 sm:mb-6">
               <span
-                className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full text-[13px] sm:text-[14px] font-bold tracking-[0.1em] uppercase shadow-xs"
+                className="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[12px] sm:text-[14px] font-bold tracking-[0.08em] uppercase shadow-xs"
                 style={{
                   background: "rgba(11, 110, 79, 0.11)",
                   color: "#0B6E4F",
@@ -169,7 +169,7 @@ export default function Hero() {
                 <motion.span
                   animate={{ opacity: [1, 0.4, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
-                  className="w-2.5 h-2.5 rounded-full"
+                  className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full"
                   style={{ background: "#0B6E4F" }}
                 />
                 AI-Powered Enterprise Solutions
@@ -179,11 +179,11 @@ export default function Hero() {
             {/* Headline */}
             <motion.h1
               variants={fadeUp}
-              className="text-[32px] sm:text-[48px] lg:text-[60px] xl:text-[64px] font-extrabold tracking-tight mb-5 sm:mb-6"
+              className="text-[32px] sm:text-[48px] lg:text-[60px] xl:text-[64px] font-extrabold tracking-tight mb-4 sm:mb-6"
               style={{
                 fontFamily: "'Playfair Display', serif",
-                fontSize: "clamp(2.1rem, 6.5vw, 4.5rem)",
-                lineHeight: "1.14",
+                fontSize: "clamp(2.4rem, 9vw, 4.5rem)",
+                lineHeight: "1.08",
                 color: "#111827",
                 letterSpacing: "-0.02em",
               }}
@@ -208,10 +208,9 @@ export default function Hero() {
             {/* Description */}
             <motion.p
               variants={fadeUp}
-              className="mb-7 sm:mb-8 text-[16px] sm:text-[18px] lg:text-[19px] leading-[1.7] max-w-[720px] font-medium"
+              className="mb-6 sm:mb-8 text-[16px] sm:text-[18px] lg:text-[19px] leading-[1.6] max-w-[720px] font-medium"
               style={{
                 color: "#1F2937",
-                fontSize: "clamp(1rem, 1.2vw, 1.2rem)",
               }}
             >
               <strong style={{ color: "#0B6E4F", fontWeight: 700 }}>GREEN KNIGHTS OF TECH &amp; AI LTD</strong> helps
@@ -220,7 +219,7 @@ export default function Hero() {
             </motion.p>
 
             {/* Two CTA Buttons */}
-            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-3.5 sm:gap-4 w-full sm:w-auto mb-7">
+            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto mb-6 sm:mb-7">
               <motion.button
                 onClick={() => scrollToSection("#contact")}
                 whileHover={{ scale: 1.04, y: -3, boxShadow: "0 14px 32px rgba(11,110,79,0.42)" }}

@@ -90,14 +90,14 @@ export function SectionHeader({
   return (
     <motion.div
       ref={ref}
-      className={`mb-16 ${center ? "text-center" : ""}`}
+      className={`mb-10 sm:mb-16 ${center ? "text-center" : ""}`}
       initial={{ opacity: 0, y: 30 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       {badge && (
         <span
-          className="inline-flex items-center gap-2.5 px-4.5 py-2.5 rounded-full text-[13px] sm:text-[14px] font-bold tracking-widest uppercase mb-5 shadow-xs"
+          className="inline-flex items-center gap-2 px-3.5 py-2 sm:px-4.5 sm:py-2.5 rounded-full text-[12px] sm:text-[14px] font-bold tracking-widest uppercase mb-4 sm:mb-5 shadow-xs"
           style={{
             background: "rgba(11,110,79,0.1)",
             color: "#0B6E4F",
@@ -105,14 +105,14 @@ export function SectionHeader({
           }}
         >
           <span
-            className="w-2.5 h-2.5 rounded-full"
+            className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full"
             style={{ background: "#0B6E4F" }}
           />
           {badge}
         </span>
       )}
       <h2
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] font-extrabold leading-tight mb-5"
+        className="text-[32px] sm:text-[40px] lg:text-[48px] font-extrabold leading-tight mb-4 sm:mb-5"
         style={{
           color: "#111827",
           fontFamily: "'Playfair Display', serif",
@@ -135,7 +135,7 @@ export function SectionHeader({
       </h2>
       {subtitle && (
         <p
-          className={`text-[18px] sm:text-[19px] leading-[1.75] max-w-[760px] ${center ? "mx-auto" : ""}`}
+          className={`text-[16px] sm:text-[18px] lg:text-[19px] leading-[1.65] max-w-[760px] ${center ? "mx-auto" : ""}`}
           style={{ color: "#374151" }}
         >
           {subtitle}

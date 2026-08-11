@@ -62,7 +62,7 @@ export default function ServiceHero({ service }: ServiceHeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-3xl sm:text-4xl lg:text-[52px] font-extrabold tracking-tight mb-6 leading-[1.15]"
+          className="text-[32px] sm:text-[44px] lg:text-[52px] font-extrabold tracking-tight mb-6 leading-[1.15]"
           style={{ color: "var(--text)", fontFamily: "'Playfair Display', serif" }}
         >
           {service.title}

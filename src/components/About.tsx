@@ -38,7 +38,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="py-16 sm:py-20 lg:py-24 relative overflow-hidden"
+      className="py-12 sm:py-16 lg:py-24 relative overflow-hidden"
       style={{ background: "var(--cream)" }}
     >
       {/* Background accent */}
@@ -60,11 +60,11 @@ export default function About() {
         />
 
         {/* ── Green Knights Philosophy Section with Knight Artwork ── */}
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16 sm:mb-20">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-12 sm:mb-20">
           {/* Left Column (Approx 42-45%): Green Knight holding shield artwork */}
-          <div className="lg:col-span-5 relative flex items-end justify-center order-2 lg:order-1 min-h-[380px] sm:min-h-[480px] lg:min-h-[540px] w-full">
+          <div className="lg:col-span-5 relative flex items-end justify-center order-2 lg:order-1 min-h-[260px] sm:min-h-[440px] lg:min-h-[540px] w-full">
             <FadeIn direction="left" delay={0.1} className="w-full h-full flex items-end justify-center">
-              <div className="relative w-full h-full min-h-[380px] sm:min-h-[480px] lg:min-h-[540px] flex items-end justify-center">
+              <div className="relative w-full h-full min-h-[260px] sm:min-h-[440px] lg:min-h-[540px] flex items-end justify-center">
                 {/* Soft emerald aura glow behind the knight */}
                 <div
                   className="absolute inset-0 pointer-events-none"
@@ -114,17 +114,17 @@ export default function About() {
             <FadeIn direction="right" delay={0.2}>
               <div>
                 <div
-                  className="w-12 h-1.5 rounded-full mb-6"
+                  className="w-12 h-1.5 rounded-full mb-4 sm:mb-6"
                   style={{ background: "linear-gradient(90deg, #0B6E4F, #C9A227)" }}
                 />
                 <span
-                  className="text-[13px] sm:text-[14px] font-bold uppercase tracking-widest block mb-3"
+                  className="text-[12px] sm:text-[14px] font-bold uppercase tracking-widest block mb-2 sm:mb-3"
                   style={{ color: "#0B6E4F" }}
                 >
                   THE GREEN KNIGHTS PHILOSOPHY
                 </span>
                 <h3
-                  className="text-3xl sm:text-4xl lg:text-[46px] font-extrabold mb-6 leading-tight"
+                  className="text-[28px] sm:text-[36px] lg:text-[46px] font-extrabold mb-4 sm:mb-6 leading-tight"
                   style={{
                     color: "#111827",
                     fontFamily: "'Playfair Display', serif",
@@ -133,24 +133,24 @@ export default function About() {
                   Digital Knights of the Round Table
                 </h3>
                 <p
-                  className="text-[18px] sm:text-[19px] leading-[1.75] mb-6 font-bold max-w-[780px]"
+                  className="text-[17px] sm:text-[18px] lg:text-[19px] leading-[1.65] mb-4 sm:mb-6 font-bold max-w-[780px]"
                   style={{ color: "#0A251B" }}
                 >
                   Technology requires more than tools. It requires strategy, collaboration, responsibility and disciplined execution.
                 </p>
                 <p
-                  className="text-[17px] sm:text-[18px] leading-[1.75] mb-8 max-w-[780px]"
+                  className="text-[16px] sm:text-[17px] lg:text-[18px] leading-[1.65] mb-6 sm:mb-8 max-w-[780px]"
                   style={{ color: "#374151" }}
                 >
                   Green Knights of Tech &amp; AI Ltd operates like a modern round table — each partner bringing specialized technical authority, collaborating with absolute transparency, and guarding enterprise interests across AI, Cloud, Cybersecurity, and Digital Transformation.
                 </p>
 
-                <div className="flex flex-wrap gap-3 mb-8">
+                <div className="flex flex-wrap gap-2.5 sm:gap-3 mb-6 sm:mb-8">
                   {["Strategy First", "AI Researchers", "Enterprise Security", "Disciplined Execution"].map(
                     (tag) => (
                       <span
                         key={tag}
-                        className="px-4.5 py-2.5 rounded-full text-[15px] sm:text-[16px] font-semibold"
+                        className="px-3.5 py-2 sm:px-4.5 sm:py-2.5 rounded-full text-[13px] sm:text-[15px] lg:text-[16px] font-semibold"
                         style={{
                           background: "rgba(11,110,79,0.1)",
                           color: "#0B6E4F",
@@ -165,7 +165,7 @@ export default function About() {
 
                 <Link
                   href="/#round-table"
-                  className="inline-flex items-center gap-3 px-8 py-4.5 rounded-xl font-bold text-[16px] sm:text-[17px] text-white shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.99] group"
+                  className="inline-flex items-center justify-center gap-3 px-7 py-3.5 sm:px-8 sm:py-4.5 rounded-xl font-bold text-[15px] sm:text-[17px] text-white shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.99] group w-full sm:w-auto"
                   style={{
                     background: "linear-gradient(135deg, #0B6E4F 0%, #06402E 100%)",
                     boxShadow: "0 6px 20px rgba(11, 110, 79, 0.25)",
@@ -173,7 +173,7 @@ export default function About() {
                 >
                   <span>Discover Our Approach</span>
                   <ArrowRight
-                    size={19}
+                    size={18}
                     className="transition-transform duration-300 group-hover:translate-x-1"
                   />
                 </Link>

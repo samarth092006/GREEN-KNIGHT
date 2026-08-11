@@ -26,15 +26,30 @@
   --shadow-gold: rgba(201, 162, 39, 0.2);
 
   /* Responsive Typography Scale */
-  --font-size-hero-h1: clamp(2.75rem, 4.5vw, 4.5rem);
-  --font-size-page-h1: clamp(2.5rem, 4.2vw, 3.75rem);
-  --font-size-h2: clamp(2rem, 3.2vw, 3rem);
-  --font-size-h3: clamp(1.4rem, 2.2vw, 2.15rem);
-  --font-size-h4: clamp(1.2rem, 1.6vw, 1.5rem);
-  --font-size-body-lg: clamp(1.0625rem, 1.2vw, 1.2rem);
+  --font-size-hero-h1: clamp(2.4rem, 9vw, 4.5rem);
+  --font-size-page-h1: clamp(2.2rem, 4.2vw, 3.75rem);
+  --font-size-h2: clamp(1.8rem, 3.2vw, 3rem);
+  --font-size-h3: clamp(1.35rem, 2.2vw, 2.15rem);
+  --font-size-h4: clamp(1.15rem, 1.6vw, 1.5rem);
+  --font-size-body-lg: clamp(1rem, 1.2vw, 1.2rem);
   --font-size-body: 1.0625rem;    /* 17px */
   --font-size-button: 1.0625rem;  /* 17px */
   --font-size-badge: 0.875rem;    /* 14px */
+}
+
+@media (max-width: 767px) {
+  :root {
+    --font-size-hero-h1: clamp(2.4rem, 9vw, 3.4rem);
+    --font-size-page-h1: clamp(2.1rem, 7vw, 2.8rem);
+    --font-size-h2: clamp(1.8rem, 6.5vw, 2.4rem);
+    --font-size-h3: 1.5rem;
+    --font-size-body: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 }
 
 .dark {

@@ -25,19 +25,19 @@ export default function RoundTableMobile() {
             className="object-contain"
           />
         </div>
-        <p className="text-[11px] font-bold tracking-widest uppercase text-[#0B6E4F]">
-          Knights of the Round Table
+        <p className="text-[18px] sm:text-[20px] font-extrabold tracking-wide uppercase text-[#0B6E4F] mb-1">
+          KNIGHTS OF THE ROUND TABLE
         </p>
-        <p className="text-[11px] text-gray-500">Tap a capability to explore</p>
+        <p className="text-[14px] sm:text-[15px] font-medium text-gray-600">Tap a capability to explore</p>
       </div>
 
       {/* ── Direct Link Capability Grid ── */}
-      <div className="grid grid-cols-2 gap-2 sm:gap-2.5 px-1 sm:px-2">
+      <div className="grid grid-cols-2 gap-2.5 sm:gap-3 px-1 sm:px-2">
         {roundTableServices.map((service) => (
           <Link
             key={service.id}
             href={service.slug}
-            className="flex items-center gap-2 sm:gap-2.5 p-2.5 sm:p-3 rounded-xl transition-all duration-300 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A227]"
+            className="flex items-center gap-2.5 p-3 rounded-xl transition-all duration-300 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A227]"
             style={{
               background: "rgba(255, 252, 242, 0.95)",
               border: "1px solid rgba(201, 162, 39, 0.35)",
@@ -46,19 +46,19 @@ export default function RoundTableMobile() {
             }}
           >
             <span
-              className="w-6.5 h-6.5 sm:w-7 sm:h-7 rounded-lg flex items-center justify-center font-extrabold text-[11px] sm:text-xs flex-shrink-0"
+              className="w-7.5 h-7.5 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center font-extrabold text-[14px] sm:text-[15px] flex-shrink-0"
               style={{
-                background: "rgba(11, 110, 79, 0.1)",
+                background: "rgba(11, 110, 79, 0.12)",
                 color: "#C9A227",
               }}
             >
               {service.number}
             </span>
             <div className="text-left min-w-0 flex-1">
-              <span className="text-[12px] sm:text-[13px] font-bold block leading-tight text-[#0A251B] break-words">
+              <span className="text-[15px] sm:text-[16px] font-bold block leading-snug text-[#0A251B] break-words">
                 {service.name}
               </span>
-              <span className="text-[10px] text-[#0B6E4F] font-semibold flex items-center gap-0.5">
+              <span className="text-[13px] sm:text-[14px] text-[#0B6E4F] font-semibold flex items-center gap-0.5 mt-0.5">
                 Explore &rarr;
               </span>
             </div>

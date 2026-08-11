@@ -176,7 +176,7 @@ export default function Navbar() {
               {/* Mobile toggle */}
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
-                className="lg:hidden p-2.5 rounded-xl"
+                className="lg:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center rounded-xl"
                 style={{
                   color: "#0B6E4F",
                   background: "rgba(11,110,79,0.1)",
