@@ -288,7 +288,7 @@ export default function Hero() {
         </div>
 
         {/* ═══ MOBILE ROUND TABLE CAPABILITY SECTION (Shown on mobile < 1024px) ═══ */}
-        <div className="block lg:hidden mt-8 sm:mt-10 pt-4 border-t border-[#0B6E4F]/15">
+        <div className="block lg:hidden mt-8 pt-8 pb-10 border-t border-[#0B6E4F]/20">
           <RoundTableExperience embedded />
         </div>
 
