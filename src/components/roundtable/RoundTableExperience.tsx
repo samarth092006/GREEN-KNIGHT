@@ -111,13 +111,13 @@ export default function RoundTableExperience({ embedded = false }: RoundTableExp
         </div>
       )}
 
-      {/* ── Desktop / Tablet layout: Clean interactive round table scene ── */}
-      <div className="hidden md:flex items-center justify-center w-full">
+      {/* ── Desktop layout (>= 1024px): Clean interactive round table scene ── */}
+      <div className="hidden lg:flex items-center justify-center w-full">
         <RoundTableScene reducedMotion={reducedMotion} />
       </div>
 
-      {/* ── Mobile layout ── */}
-      <div className="block md:hidden">
+      {/* ── Mobile & Tablet layout (< 1024px): Compact direct capability selector ── */}
+      <div className="block lg:hidden">
         <RoundTableMobile />
       </div>
     </div>
