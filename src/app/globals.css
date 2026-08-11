@@ -25,13 +25,13 @@
   --shadow-green: rgba(11, 110, 79, 0.15);
   --shadow-gold: rgba(201, 162, 39, 0.2);
 
-  /* Centralized High-Readability Typography Scale */
-  --font-size-hero-h1: clamp(2.6rem, 5vw, 4.5rem);
-  --font-size-page-h1: clamp(2.5rem, 4.5vw, 3.75rem);
-  --font-size-h2: clamp(2rem, 3.5vw, 3rem);
-  --font-size-h3: clamp(1.45rem, 2.4vw, 2.15rem);
-  --font-size-h4: clamp(1.25rem, 1.8vw, 1.55rem);
-  --font-size-body-lg: 1.1875rem; /* 19px */
+  /* Responsive Typography Scale */
+  --font-size-hero-h1: clamp(2.75rem, 4.5vw, 4.5rem);
+  --font-size-page-h1: clamp(2.5rem, 4.2vw, 3.75rem);
+  --font-size-h2: clamp(2rem, 3.2vw, 3rem);
+  --font-size-h3: clamp(1.4rem, 2.2vw, 2.15rem);
+  --font-size-h4: clamp(1.2rem, 1.6vw, 1.5rem);
+  --font-size-body-lg: clamp(1.0625rem, 1.2vw, 1.2rem);
   --font-size-body: 1.0625rem;    /* 17px */
   --font-size-button: 1.0625rem;  /* 17px */
   --font-size-badge: 0.875rem;    /* 14px */
@@ -44,6 +44,13 @@
   --text-muted: #E5E7EB;
   --glass-bg: rgba(11, 110, 79, 0.18);
   --glass-border: rgba(11, 110, 79, 0.35);
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -60,7 +67,6 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 1.0625rem; /* 17px base size */
   line-height: 1.75;
-  overflow-x: hidden;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 

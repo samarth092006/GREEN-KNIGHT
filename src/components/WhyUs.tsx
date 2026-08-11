@@ -71,7 +71,7 @@ export default function WhyUs() {
   return (
     <section
       id="why-us"
-      className="py-24 sm:py-32 relative overflow-hidden"
+      className="py-16 sm:py-20 lg:py-24 relative overflow-hidden"
       style={{
         background:
           "linear-gradient(135deg, #0B6E4F 0%, #145A32 60%, #0d3d22 100%)",
@@ -101,7 +101,7 @@ export default function WhyUs() {
         }}
       />
 
-      <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 relative z-10">
         {/* Section header */}
         <motion.div
           className="text-center mb-16"

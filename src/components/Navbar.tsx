@@ -77,7 +77,7 @@ export default function Navbar() {
           boxShadow: scrolled ? "0 4px 30px rgba(11, 110, 79, 0.08)" : "none",
         }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
           <div className="flex items-center justify-between h-[84px]">
 
             {/* ── Logo + Brand name ── */}

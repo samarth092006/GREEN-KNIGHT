@@ -38,7 +38,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="py-24 sm:py-32 relative overflow-hidden"
+      className="py-16 sm:py-20 lg:py-24 relative overflow-hidden"
       style={{ background: "var(--cream)" }}
     >
       {/* Background accent */}
@@ -50,7 +50,7 @@ export default function About() {
         }}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
         {/* ── Section Intro: The Story Behind Green Knights ── */}
         <SectionHeader
           badge="About Us"
@@ -60,11 +60,11 @@ export default function About() {
         />
 
         {/* ── Green Knights Philosophy Section with Knight Artwork ── */}
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-24">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16 sm:mb-20">
           {/* Left Column (Approx 42-45%): Green Knight holding shield artwork */}
-          <div className="lg:col-span-5 relative flex items-end justify-center order-2 lg:order-1 min-h-[480px] sm:min-h-[580px] lg:min-h-[640px] w-full">
+          <div className="lg:col-span-5 relative flex items-end justify-center order-2 lg:order-1 min-h-[380px] sm:min-h-[480px] lg:min-h-[540px] w-full">
             <FadeIn direction="left" delay={0.1} className="w-full h-full flex items-end justify-center">
-              <div className="relative w-full h-full min-h-[480px] sm:min-h-[580px] lg:min-h-[640px] flex items-end justify-center">
+              <div className="relative w-full h-full min-h-[380px] sm:min-h-[480px] lg:min-h-[540px] flex items-end justify-center">
                 {/* Soft emerald aura glow behind the knight */}
                 <div
                   className="absolute inset-0 pointer-events-none"

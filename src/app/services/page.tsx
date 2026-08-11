@@ -129,7 +129,7 @@ export default function ServicesLandingPage() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3, delay: i * 0.05 }}
-                  className="group relative rounded-2xl p-7 sm:p-8 overflow-hidden flex flex-col justify-between"
+                  className="group relative rounded-2xl p-5 sm:p-7 lg:p-8 overflow-hidden flex flex-col justify-between"
                   style={{
                     background: "rgba(255,255,255,0.78)",
                     backdropFilter: "blur(12px)",

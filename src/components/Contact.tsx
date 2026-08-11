@@ -72,7 +72,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 sm:py-32 relative overflow-hidden"
+      className="py-16 sm:py-20 lg:py-24 relative overflow-hidden"
       style={{ background: "var(--cream)" }}
     >
       <div
@@ -83,7 +83,7 @@ export default function Contact() {
         }}
       />
 
-      <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div ref={ref} className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 relative z-10">
         <SectionHeader
           badge="Contact Us"
           title="Ready to Begin"

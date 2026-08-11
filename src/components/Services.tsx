@@ -98,18 +98,19 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-24 sm:py-32 relative"
-      style={{ background: "var(--cream)" }}
+      className="py-16 sm:py-20 lg:py-24 relative"
+      style={{ background: "var(--cream-dark)" }}
     >
+      {/* Background radial highlight */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: `radial-gradient(circle at 20% 80%, rgba(11,110,79,0.06) 0%, transparent 50%),
-            radial-gradient(circle at 80% 20%, rgba(201,162,39,0.05) 0%, transparent 50%)`,
+          background:
+            "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(11,110,79,0.05) 0%, transparent 70%)",
         }}
       />
 
-      <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div ref={ref} className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 relative z-10">
         <SectionHeader
           badge="Our Services"
           title="Solutions That"
