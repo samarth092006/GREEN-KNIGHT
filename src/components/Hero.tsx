@@ -92,7 +92,7 @@ export default function Hero() {
       id="hero"
       ref={sectionRef}
       onMouseMove={handleMouseMove}
-      className="relative w-full min-h-[calc(100vh-84px)] lg:min-h-0 pt-[104px] pb-12 lg:pb-16 noise-overlay flex flex-col justify-center"
+      className="relative w-full pt-[96px] sm:pt-[104px] pb-10 sm:pb-12 lg:pb-16 noise-overlay flex flex-col justify-center"
       style={{
         background: "linear-gradient(155deg, #FFF8DC 0%, #FAF6DC 40%, #F5F0D2 100%)",
       }}
@@ -145,11 +145,11 @@ export default function Hero() {
         />
       </div>
 
-      {/* ── Main Two-Column Container: Hero Content (Left) + Interactive Round Table (Right) ── */}
+      {/* ── Main Container: Hero Text (Left on Desktop, Top on Mobile) + Round Table (Right on Desktop, Center on Mobile) ── */}
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
         <div className="grid lg:grid-cols-[44fr_56fr] gap-8 xl:gap-12 items-center">
 
-          {/* ═══ LEFT COLUMN (44% on desktop) ═══ */}
+          {/* ═══ HERO TEXT CONTENT ═══ */}
           <motion.div
             variants={containerVar}
             initial="hidden"
@@ -157,7 +157,7 @@ export default function Hero() {
             className="flex flex-col items-start text-left"
           >
             {/* Eyebrow badge */}
-            <motion.div variants={fadeUp} className="mb-4 sm:mb-6">
+            <motion.div variants={fadeUp} className="mb-3.5 sm:mb-5">
               <span
                 className="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[12px] sm:text-[14px] font-bold tracking-[0.08em] uppercase shadow-xs"
                 style={{
@@ -182,7 +182,7 @@ export default function Hero() {
               className="text-[32px] sm:text-[48px] lg:text-[60px] xl:text-[64px] font-extrabold tracking-tight mb-4 sm:mb-6"
               style={{
                 fontFamily: "'Playfair Display', serif",
-                fontSize: "clamp(2.4rem, 9vw, 4.5rem)",
+                fontSize: "clamp(2.25rem, 8.5vw, 4.5rem)",
                 lineHeight: "1.08",
                 color: "#111827",
                 letterSpacing: "-0.02em",
@@ -208,7 +208,7 @@ export default function Hero() {
             {/* Description */}
             <motion.p
               variants={fadeUp}
-              className="mb-6 sm:mb-8 text-[16px] sm:text-[18px] lg:text-[19px] leading-[1.6] max-w-[720px] font-medium"
+              className="mb-5 sm:mb-7 text-[16px] sm:text-[18px] lg:text-[19px] leading-[1.6] max-w-[720px] font-medium"
               style={{
                 color: "#1F2937",
               }}
@@ -219,7 +219,7 @@ export default function Hero() {
             </motion.p>
 
             {/* Two CTA Buttons */}
-            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto mb-6 sm:mb-7">
+            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto mb-5 sm:mb-7">
               <motion.button
                 onClick={() => scrollToSection("#contact")}
                 whileHover={{ scale: 1.04, y: -3, boxShadow: "0 14px 32px rgba(11,110,79,0.42)" }}
@@ -268,7 +268,7 @@ export default function Hero() {
             {/* Trust Indicators */}
             <motion.div
               variants={fadeUp}
-              className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-4 text-[14px] sm:text-[16px] font-bold"
+              className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-2 sm:mb-4 text-[14px] sm:text-[16px] font-bold"
               style={{ color: "#1F2937" }}
             >
               {trustBadges.map((badge) => (
@@ -280,11 +280,16 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* ═══ RIGHT COLUMN (56% on desktop): Interactive Green Round Table Centerpiece ═══ */}
-          <div className="relative flex items-center justify-center w-full max-w-[760px] mx-auto">
+          {/* ═══ DESKTOP ROUND TABLE VISUAL (ONLY shown on lg >= 1024px) ═══ */}
+          <div className="hidden lg:flex relative items-center justify-center w-full max-w-[760px] mx-auto">
             <RoundTableExperience embedded />
           </div>
 
+        </div>
+
+        {/* ═══ MOBILE ROUND TABLE CAPABILITY SECTION (Shown on mobile < 1024px) ═══ */}
+        <div className="block lg:hidden mt-8 sm:mt-10 pt-4 border-t border-[#0B6E4F]/15">
+          <RoundTableExperience embedded />
         </div>
 
         {/* ═══ STATISTICS ROW ═══ */}
@@ -292,15 +297,15 @@ export default function Hero() {
           variants={containerVar}
           initial="hidden"
           animate="show"
-          className="mt-10 sm:mt-12 w-full"
+          className="mt-8 sm:mt-12 w-full"
         >
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 max-w-5xl">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-5 max-w-5xl">
             {stats.map((stat) => (
               <motion.div
                 key={stat.label}
                 variants={fadeUp}
                 whileHover={{ y: -6, boxShadow: "0 22px 45px rgba(11,110,79,0.16)" }}
-                className="flex items-center gap-3.5 p-4 sm:p-5 rounded-[18px]"
+                className="flex items-center gap-3 sm:gap-3.5 p-3.5 sm:p-5 rounded-[18px]"
                 style={{
                   background: "rgba(255, 255, 255, 0.85)",
                   backdropFilter: "blur(16px)",
@@ -311,7 +316,7 @@ export default function Hero() {
                 }}
               >
                 <div
-                  className="w-11 h-11 sm:w-13 sm:h-13 rounded-xl flex items-center justify-center flex-shrink-0"
+                  className="w-10 h-10 sm:w-13 sm:h-13 rounded-xl flex items-center justify-center flex-shrink-0"
                   style={{
                     background: "rgba(11, 110, 79, 0.12)",
                   }}
@@ -319,14 +324,14 @@ export default function Hero() {
                   {stat.icon}
                 </div>
 
-                <div className="text-left">
+                <div className="text-left min-w-0">
                   <p
-                    className="text-xl sm:text-2xl lg:text-[28px] font-extrabold leading-none mb-1 text-[#111827]"
+                    className="text-lg sm:text-2xl lg:text-[28px] font-extrabold leading-none mb-1 text-[#111827]"
                     style={{ fontFamily: "'Playfair Display', serif" }}
                   >
                     {stat.value}
                   </p>
-                  <p className="text-[12px] sm:text-[13px] font-bold text-[#374151] uppercase tracking-wider leading-none">
+                  <p className="text-[11px] sm:text-[13px] font-bold text-[#374151] uppercase tracking-wider leading-none truncate">
                     {stat.label}
                   </p>
                 </div>
@@ -335,12 +340,12 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* ── Scroll indicator button ── */}
+        {/* ── Scroll indicator button (Desktop only) ── */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.1 }}
-          className="mt-8 flex justify-center w-full"
+          className="hidden lg:flex mt-8 justify-center w-full"
         >
           <button
             onClick={() => scrollToSection("#about")}
