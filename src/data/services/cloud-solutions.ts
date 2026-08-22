@@ -91,7 +91,7 @@ export const cloudSolutions: ServiceData = {
   relatedSlugs: ["cybersecurity", "software-development", "devops-solutions"],
   seo: {
     metaTitle: "Cloud Architecture & DevOps Engineering | Green Knights",
-    metaDescription: "Enterprise cloud migration, Kubernetes orchestration, and Infrastructure as Code services by Green Knights of Tech & AI Ltd.",
+    metaDescription: "Enterprise cloud migration, Kubernetes orchestration, and Infrastructure as Code services by Green Knights of Tech & AI.",
     keywords: ["Cloud Solutions", "AWS Migration", "Azure Kubernetes", "Terraform IaC", "DevOps Engineering"],
   },
 };

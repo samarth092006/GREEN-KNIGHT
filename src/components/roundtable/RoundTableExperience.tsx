@@ -1,16 +1,18 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Volume2, VolumeX, Shield } from "lucide-react";
+import Link from "next/link";
+import { Volume2, VolumeX, Shield, ArrowRight } from "lucide-react";
 import { playChime } from "@/lib/audio";
 import RoundTableScene from "./RoundTableScene";
 import RoundTableMobile from "./RoundTableMobile";
 
 interface RoundTableExperienceProps {
   embedded?: boolean;
+  large?: boolean;
 }
 
-export default function RoundTableExperience({ embedded = false }: RoundTableExperienceProps) {
+export default function RoundTableExperience({ embedded = false, large = false }: RoundTableExperienceProps) {
   const [soundEnabled, setSoundEnabled]   = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
 
@@ -60,13 +62,25 @@ export default function RoundTableExperience({ embedded = false }: RoundTableExp
           </h2>
 
           <p
-            className="max-w-2xl text-sm sm:text-base leading-relaxed"
+            className="max-w-2xl text-sm sm:text-base leading-relaxed mb-3"
             style={{ color: "#2D4A3E" }}
           >
             Click any service hotspot orbiting the table to explore that technology capability.
           </p>
 
-          <div className="mt-3">
+          <div className="flex items-center justify-center gap-3 mt-2 flex-wrap">
+            <Link
+              href="/round-table"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-200 shadow-sm hover:scale-105"
+              style={{
+                background: "linear-gradient(135deg, #0B6E4F 0%, #145A32 100%)",
+                color: "#FFFFFF",
+              }}
+            >
+              <span>Explore Dedicated Round Table Page</span>
+              <ArrowRight size={13} />
+            </Link>
+
             <button
               type="button"
               onClick={toggleSound}
@@ -111,15 +125,17 @@ export default function RoundTableExperience({ embedded = false }: RoundTableExp
         </div>
       )}
 
-      {/* ── Desktop layout (>= 1024px): Clean interactive round table scene ── */}
-      <div className="hidden lg:flex items-center justify-center w-full">
-        <RoundTableScene reducedMotion={reducedMotion} />
+      {/* ── Round Table Scene (always shown when large=true, or desktop on embedded) ── */}
+      <div className={large ? "flex items-center justify-center w-full" : "hidden lg:flex items-center justify-center w-full"}>
+        <RoundTableScene reducedMotion={reducedMotion} large={large} />
       </div>
 
-      {/* ── Mobile & Tablet layout (< 1024px): Compact direct capability selector ── */}
-      <div className="block lg:hidden">
-        <RoundTableMobile />
-      </div>
+      {/* ── Mobile capability selector (only when not in large cinematic mode) ── */}
+      {!large && (
+        <div className="block lg:hidden">
+          <RoundTableMobile />
+        </div>
+      )}
     </div>
   );
 

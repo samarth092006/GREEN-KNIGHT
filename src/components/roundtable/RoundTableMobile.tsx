@@ -22,6 +22,7 @@ export default function RoundTableMobile() {
             src="/images/brand/gk-shield-premium.png"
             alt="Green Knights Shield Logo"
             fill
+            sizes="(max-width: 768px) 112px, 120px"
             className="object-contain"
           />
         </div>

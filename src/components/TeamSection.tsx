@@ -11,7 +11,7 @@ export default function TeamSection() {
           badge="Leadership & Expertise"
           title="Leadership & Senior"
           highlight="Engineering Team"
-          subtitle="Green Knights of Tech & AI Ltd is led by veteran software engineers, AI researchers, and technical consultants."
+          subtitle="Green Knights of Tech & AI is led by veteran software engineers, AI researchers, and technical consultants."
         />
 
         <div className="max-w-3xl mx-auto p-8 sm:p-12 rounded-3xl bg-white/78 backdrop-blur-md border border-[#0B6E4F]20 shadow-lg">

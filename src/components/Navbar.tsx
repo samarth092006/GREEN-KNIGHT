@@ -8,8 +8,10 @@ import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 
 const navLinks = [
-  { label: "About", href: "/#about" },
-  { label: "Services", href: "/services" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/#services" },
+  { label: "Round Table", href: "/round-table" },
   { label: "Why Us", href: "/#why-us" },
   { label: "Industries", href: "/#industries" },
   { label: "Our Process", href: "/#process" },
@@ -43,8 +45,16 @@ export default function Navbar() {
 
   const handleNavClick = (href: string) => {
     setMobileOpen(false);
-    if (href === "/services") {
-      router.push("/services");
+    if (href === "/") {
+      if (pathname === "/") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        router.push("/");
+      }
+      return;
+    }
+    if (href === "/about" || href === "/round-table" || href === "/services") {
+      router.push(href);
       return;
     }
 
@@ -110,31 +120,55 @@ export default function Navbar() {
                   className="text-[12px] font-bold leading-none tracking-widest uppercase mt-1"
                   style={{ color: "#145A32", opacity: 0.85 }}
                 >
-                  of Tech &amp; AI Ltd
+                  of Tech &amp; AI
                 </p>
               </div>
             </Link>
 
             {/* ── Desktop nav ── */}
-            <nav className="hidden lg:flex items-center gap-2" aria-label="Main navigation">
-              {navLinks.map((link) => (
-                <button
-                  key={link.href}
-                  onClick={() => handleNavClick(link.href)}
-                  className="relative px-4 py-2.5 text-[16px] font-semibold rounded-lg transition-all duration-150 group"
-                  style={{ color: "#1A1A1A", background: "transparent", border: "none", cursor: "pointer" }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLButtonElement).style.color = "#0B6E4F";
-                    (e.currentTarget as HTMLButtonElement).style.background = "rgba(11,110,79,0.08)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLButtonElement).style.color = "#1A1A1A";
-                    (e.currentTarget as HTMLButtonElement).style.background = "transparent";
-                  }}
-                >
-                  {link.label}
-                </button>
-              ))}
+            <nav className="hidden lg:flex items-center gap-1 xl:gap-2" aria-label="Main navigation">
+              {navLinks.map((link) => {
+                const isActive =
+                  (link.href === "/" && pathname === "/") ||
+                  (link.href === "/about" && pathname === "/about") ||
+                  (link.href === "/round-table" && pathname === "/round-table") ||
+                  (link.href === "/services" && pathname === "/services");
+
+                return (
+                  <button
+                    key={link.href}
+                    onClick={() => handleNavClick(link.href)}
+                    className="relative px-3 xl:px-4 py-2 text-[14px] xl:text-[15.5px] font-semibold rounded-lg transition-all duration-150 group whitespace-nowrap"
+                    style={{
+                      color: isActive ? "#C9A227" : "#1A1A1A",
+                      background: isActive ? "rgba(201,162,39,0.1)" : "transparent",
+                      border: "none",
+                      cursor: "pointer",
+                      fontWeight: isActive ? 700 : 600,
+                    }}
+                    onMouseEnter={(e) => {
+                      if (!isActive) {
+                        (e.currentTarget as HTMLButtonElement).style.color = "#0B6E4F";
+                        (e.currentTarget as HTMLButtonElement).style.background = "rgba(11,110,79,0.08)";
+                      }
+                    }}
+                    onMouseLeave={(e) => {
+                      if (!isActive) {
+                        (e.currentTarget as HTMLButtonElement).style.color = "#1A1A1A";
+                        (e.currentTarget as HTMLButtonElement).style.background = "transparent";
+                      }
+                    }}
+                  >
+                    {link.label}
+                    {isActive && (
+                      <span
+                        className="absolute bottom-1 left-4 right-4 h-0.5 rounded-full"
+                        style={{ background: "#C9A227", boxShadow: "0 0 8px rgba(201,162,39,0.6)" }}
+                      />
+                    )}
+                  </button>
+                );
+              })}
             </nav>
 
             {/* ── Right side ── */}
@@ -154,7 +188,7 @@ export default function Navbar() {
                 {darkMode ? <Sun size={20} /> : <Moon size={20} />}
               </button>
 
-              {/* Book Consultation CTA */}
+              {/* Book a Consultation CTA */}
               <motion.button
                 onClick={() => handleNavClick("/#contact")}
                 whileHover={{ scale: 1.05, y: -2, boxShadow: "0 8px 24px rgba(11,110,79,0.45)" }}
@@ -169,7 +203,7 @@ export default function Navbar() {
                 }}
                 id="navbar-book-btn"
               >
-                Book Consultation
+                Book a Consultation
                 <ArrowRight size={15} />
               </motion.button>
 
@@ -210,27 +244,48 @@ export default function Navbar() {
             }}
           >
             <div className="max-w-7xl mx-auto px-5 py-5 flex flex-col gap-1.5">
-              {navLinks.map((link, i) => (
-                <motion.button
-                  key={link.href}
-                  initial={{ opacity: 0, x: -16 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.05 }}
-                  onClick={() => handleNavClick(link.href)}
-                  className="w-full text-left px-4 py-3.5 rounded-xl text-[16px] font-semibold transition-all"
-                  style={{ color: "#1A1A1A", background: "transparent", border: "none", cursor: "pointer" }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLButtonElement).style.background = "rgba(11,110,79,0.08)";
-                    (e.currentTarget as HTMLButtonElement).style.color = "#0B6E4F";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLButtonElement).style.background = "transparent";
-                    (e.currentTarget as HTMLButtonElement).style.color = "#1A1A1A";
-                  }}
-                >
-                  {link.label}
-                </motion.button>
-              ))}
+              {navLinks.map((link, i) => {
+                const isActive =
+                  (link.href === "/" && pathname === "/") ||
+                  (link.href === "/about" && pathname === "/about") ||
+                  (link.href === "/round-table" && pathname === "/round-table") ||
+                  (link.href === "/services" && pathname === "/services");
+
+                return (
+                  <motion.button
+                    key={link.href}
+                    initial={{ opacity: 0, x: -16 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.05 }}
+                    onClick={() => handleNavClick(link.href)}
+                    className="w-full text-left px-4 py-3.5 rounded-xl text-[16px] font-semibold transition-all flex items-center justify-between"
+                    style={{
+                      color: isActive ? "#C9A227" : "#1A1A1A",
+                      background: isActive ? "rgba(201,162,39,0.12)" : "transparent",
+                      border: isActive ? "1px solid rgba(201,162,39,0.3)" : "none",
+                      cursor: "pointer",
+                      fontWeight: isActive ? 700 : 600,
+                    }}
+                    onMouseEnter={(e) => {
+                      if (!isActive) {
+                        (e.currentTarget as HTMLButtonElement).style.background = "rgba(11,110,79,0.08)";
+                        (e.currentTarget as HTMLButtonElement).style.color = "#0B6E4F";
+                      }
+                    }}
+                    onMouseLeave={(e) => {
+                      if (!isActive) {
+                        (e.currentTarget as HTMLButtonElement).style.background = "transparent";
+                        (e.currentTarget as HTMLButtonElement).style.color = "#1A1A1A";
+                      }
+                    }}
+                  >
+                    <span>{link.label}</span>
+                    {isActive && (
+                      <span className="w-2 h-2 rounded-full" style={{ background: "#C9A227" }} />
+                    )}
+                  </motion.button>
+                );
+              })}
               <div className="flex gap-2.5 mt-3 pt-3" style={{ borderTop: "1px solid rgba(11,110,79,0.12)" }}>
                 <button
                   onClick={toggleDark}
@@ -245,7 +300,7 @@ export default function Navbar() {
                   className="flex items-center gap-2 px-4 py-3 rounded-xl text-[16px] font-semibold flex-1 justify-center text-white"
                   style={{ background: "linear-gradient(135deg, #0B6E4F, #145A32)", border: "none", cursor: "pointer" }}
                 >
-                  Book Consultation
+                  Book a Consultation
                 </button>
               </div>
             </div>

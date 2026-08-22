@@ -14,9 +14,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Green Knights of Tech & AI Ltd | Digital Knights of the Round Table",
+  title: "Green Knights of Tech & AI | Digital Knights of the Round Table",
   description:
-    "Green Knights of Tech & AI Ltd — Digital Knights of the Round Table, serving your technology needs. Enterprise AI solutions, software development, cybersecurity, and digital transformation.",
+    "Green Knights of Tech & AI — Digital Knights of the Round Table, serving your technology needs. Enterprise AI solutions, software development, cybersecurity, and digital transformation.",
   keywords: [
     "AI solutions",
     "technology company",
@@ -29,16 +29,16 @@ export const metadata: Metadata = {
     "enterprise technology",
     "artificial intelligence",
   ],
-  authors: [{ name: "Green Knights of Tech & AI Ltd" }],
-  creator: "Green Knights of Tech & AI Ltd",
-  publisher: "Green Knights of Tech & AI Ltd",
+  authors: [{ name: "Green Knights of Tech & AI" }],
+  creator: "Green Knights of Tech & AI",
+  publisher: "Green Knights of Tech & AI",
   metadataBase: new URL("https://greenknights.tech"),
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://greenknights.tech",
-    siteName: "Green Knights of Tech & AI Ltd",
-    title: "Green Knights of Tech & AI Ltd | Digital Knights of the Round Table",
+    siteName: "Green Knights of Tech & AI",
+    title: "Green Knights of Tech & AI | Digital Knights of the Round Table",
     description:
       "Digital Knights of the Round Table, serving your technology needs. Enterprise AI, software development, and digital transformation.",
     images: [
@@ -46,13 +46,13 @@ export const metadata: Metadata = {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Green Knights of Tech & AI Ltd",
+        alt: "Green Knights of Tech & AI",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Green Knights of Tech & AI Ltd",
+    title: "Green Knights of Tech & AI",
     description:
       "Digital Knights of the Round Table, serving your technology needs.",
     images: ["/logo.png"],

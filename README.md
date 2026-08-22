@@ -1,13 +1,13 @@
-# GREEN KNIGHTS OF TECH & AI LTD
+# GREEN KNIGHTS OF TECH & AI
 
 > **Building Intelligent Technology for Tomorrow**  
-> Official corporate website for Green Knights of Tech & AI Ltd — built with Next.js 16 (Turbopack), React 19, TypeScript, Tailwind CSS, and Framer Motion.
+> Official corporate website for Green Knights of Tech & AI — built with Next.js 16 (Turbopack), React 19, TypeScript, Tailwind CSS, and Framer Motion.
 
 ---
 
-## 🛡️ About Green Knights of Tech & AI Ltd
+## 🛡️ About Green Knights of Tech & AI
 
-Green Knights of Tech & AI Ltd is an enterprise digital transformation, AI engineering, and IT consulting agency. Operating like a modern Round Table, Green Knights provides end-to-end strategy, sovereign AI architecture, cloud infrastructure, cybersecurity, and full-stack software development.
+Green Knights of Tech & AI is an enterprise digital transformation, AI engineering, and IT consulting agency. Operating like a modern Round Table, Green Knights provides end-to-end strategy, sovereign AI architecture, cloud infrastructure, cybersecurity, and full-stack software development.
 
 ### Enterprise Pillars & Core Services
 1. **AI Solutions**: Generative AI, LLM integration, machine learning, predictive analytics & decision automation.
@@ -115,4 +115,4 @@ website/
 
 ## 📄 License & Copyright
 
-© 2026 **Green Knights of Tech & AI Ltd**. All rights reserved.
+© 2026 **Green Knights of Tech & AI**. All rights reserved.

@@ -96,7 +96,7 @@ export default function ServiceHero({ service }: ServiceHeroProps) {
               boxShadow: "0 10px 25px rgba(11,110,79,0.35)",
             }}
           >
-            Book Consultation
+            Book a Consultation
             <ArrowRight size={18} />
           </motion.button>
 

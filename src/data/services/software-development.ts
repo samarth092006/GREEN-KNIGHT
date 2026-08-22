@@ -91,7 +91,7 @@ export const softwareDevelopment: ServiceData = {
   relatedSlugs: ["ai-solutions", "cloud-solutions", "cybersecurity"],
   seo: {
     metaTitle: "Custom Enterprise Software Engineering | Green Knights",
-    metaDescription: "Build scalable web applications, mobile platforms, and microservices with Green Knights of Tech & AI Ltd.",
+    metaDescription: "Build scalable web applications, mobile platforms, and microservices with Green Knights of Tech & AI.",
     keywords: ["Custom Software Development", "Next.js Enterprise", "Microservice Architecture", "Full-Stack Development"],
   },
 };

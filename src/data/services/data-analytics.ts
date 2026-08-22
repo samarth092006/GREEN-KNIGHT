@@ -91,7 +91,7 @@ export const dataAnalytics: ServiceData = {
   relatedSlugs: ["ai-solutions", "it-consulting", "cloud-solutions"],
   seo: {
     metaTitle: "Enterprise Data Analytics & Business Intelligence | Green Knights",
-    metaDescription: "Build modern Snowflake data warehouses, automated dbt pipelines, and executive dashboards with Green Knights of Tech & AI Ltd.",
+    metaDescription: "Build modern Snowflake data warehouses, automated dbt pipelines, and executive dashboards with Green Knights of Tech & AI.",
     keywords: ["Data Analytics", "Snowflake Warehouse", "Business Intelligence", "PowerBI Dashboards", "dbt Transformation"],
   },
 };

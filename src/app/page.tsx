@@ -7,6 +7,7 @@ import BackToTop from "@/components/BackToTop";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import RoundTableSection from "@/components/RoundTableSection";
 import About from "@/components/About";
 import Values from "@/components/Values";
 import Services from "@/components/Services";
@@ -15,7 +16,6 @@ import Industries from "@/components/Industries";
 import TechStack from "@/components/TechStack";
 import Process from "@/components/Process";
 import Testimonials from "@/components/Testimonials";
-import TrustSection from "@/components/TrustSection";
 import TeamSection from "@/components/TeamSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -36,7 +36,7 @@ export default function Home() {
       {/* Main content */}
       <main>
         <Hero />
-        <TrustSection />
+        <RoundTableSection />
         <About />
         <Values />
         <Services />

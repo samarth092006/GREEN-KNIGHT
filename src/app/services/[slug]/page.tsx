@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: service.seo.metaTitle,
       description: service.seo.metaDescription,
       url: `https://greenknights.tech/services/${service.slug}`,
-      siteName: "Green Knights of Tech & AI Ltd",
+      siteName: "Green Knights of Tech & AI",
       type: "article",
     },
     twitter: {
@@ -67,7 +67,7 @@ export default async function ServicePage({ params }: PageProps) {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Green Knights of Tech & AI Ltd",
+    name: "Green Knights of Tech & AI",
     url: "https://greenknights.tech",
     logo: "https://greenknights.tech/logo.png",
     sameAs: [

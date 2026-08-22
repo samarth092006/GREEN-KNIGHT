@@ -6,8 +6,9 @@ import { ArrowUp, Mail, Phone, MapPin, ShieldCheck } from "lucide-react";
 
 const quickLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/#about" },
-  { label: "Services", href: "/services" },
+  { label: "About Us", href: "/about" },
+  { label: "Services", href: "/#services" },
+  { label: "Round Table", href: "/round-table" },
   { label: "Why Choose Us", href: "/#why-us" },
   { label: "Industries", href: "/#industries" },
   { label: "Our Process", href: "/#process" },
@@ -68,7 +69,7 @@ export default function Footer() {
                   Green Knights
                 </p>
                 <p className="text-[12px] font-bold tracking-widest text-[#C9A227] uppercase mt-0.5">
-                  of Tech &amp; AI Ltd
+                  of Tech &amp; AI
                 </p>
               </div>
             </Link>
@@ -150,7 +151,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[13.5px] sm:text-[14px] text-white/70 font-medium">
-            © {new Date().getFullYear()} Green Knights of Tech &amp; AI Ltd. All rights reserved.
+            © {new Date().getFullYear()} Green Knights of Tech &amp; AI. All rights reserved.
           </p>
 
           <button

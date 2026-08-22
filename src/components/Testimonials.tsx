@@ -18,7 +18,7 @@ export default function Testimonials() {
           badge="Testimonials & Impact"
           title="Client Success"
           highlight="Stories"
-          subtitle="Green Knights of Tech & AI Ltd is committed to delivering measurable business impact across enterprise projects."
+          subtitle="Green Knights of Tech & AI is committed to delivering measurable business impact across enterprise projects."
         />
 
         <div

@@ -56,7 +56,7 @@ export default function About() {
           badge="About Us"
           title="The Story Behind"
           highlight="Green Knights"
-          subtitle="Born from the belief that technology should be a force for transformation, Green Knights of Tech & AI Ltd was founded to bridge the gap between complex enterprise challenges and intelligent, human-centred solutions."
+          subtitle="Born from the belief that technology should be a force for transformation, Green Knights of Tech & AI was founded to bridge the gap between complex enterprise challenges and intelligent, human-centred solutions."
         />
 
         {/* ── Green Knights Philosophy Section with Knight Artwork ── */}
@@ -142,7 +142,7 @@ export default function About() {
                   className="text-[16px] sm:text-[17px] lg:text-[18px] leading-[1.65] mb-6 sm:mb-8 max-w-[780px]"
                   style={{ color: "#374151" }}
                 >
-                  Green Knights of Tech &amp; AI Ltd operates like a modern round table — each partner bringing specialized technical authority, collaborating with absolute transparency, and guarding enterprise interests across AI, Cloud, Cybersecurity, and Digital Transformation.
+                  Green Knights of Tech &amp; AI operates like a modern round table — each partner bringing specialized technical authority, collaborating with absolute transparency, and guarding enterprise interests across AI, Cloud, Cybersecurity, and Digital Transformation.
                 </p>
 
                 <div className="flex flex-wrap gap-2.5 sm:gap-3 mb-6 sm:mb-8">

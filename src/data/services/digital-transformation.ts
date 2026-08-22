@@ -91,7 +91,7 @@ export const digitalTransformation: ServiceData = {
   relatedSlugs: ["software-development", "erp-solutions", "it-consulting"],
   seo: {
     metaTitle: "Enterprise Digital Transformation Services | Green Knights",
-    metaDescription: "Modernize legacy systems, automate workflows, and accelerate digital growth with Green Knights of Tech & AI Ltd.",
+    metaDescription: "Modernize legacy systems, automate workflows, and accelerate digital growth with Green Knights of Tech & AI.",
     keywords: ["Digital Transformation", "Legacy System Modernization", "Process Automation", "EnterpriseCX"],
   },
 };

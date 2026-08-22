@@ -91,7 +91,7 @@ export const erpSolutions: ServiceData = {
   relatedSlugs: ["digital-transformation", "software-development", "data-analytics"],
   seo: {
     metaTitle: "Enterprise ERP Implementation & Integration | Green Knights",
-    metaDescription: "Unify your enterprise operations with SAP, Odoo, and custom ERP solutions built by Green Knights of Tech & AI Ltd.",
+    metaDescription: "Unify your enterprise operations with SAP, Odoo, and custom ERP solutions built by Green Knights of Tech & AI.",
     keywords: ["Enterprise ERP", "SAP Implementation", "Odoo Development", "Supply Chain Automation", "ERP Integration"],
   },
 };

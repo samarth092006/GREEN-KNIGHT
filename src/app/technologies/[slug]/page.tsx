@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${tech.name} Enterprise Architecture | Green Knights of Tech & AI Ltd`,
+    title: `${tech.name} Enterprise Architecture | Green Knights of Tech & AI`,
     description: tech.shortIntro,
     openGraph: {
       title: `${tech.name} Solutions & Services | Green Knights`,
@@ -72,7 +72,7 @@ export default async function TechnologyDetailPage({ params }: PageProps) {
     description: tech.shortIntro,
     publisher: {
       "@type": "Organization",
-      name: "Green Knights of Tech & AI Ltd",
+      name: "Green Knights of Tech & AI",
       url: "https://greenknights.ai",
     },
   };
@@ -296,7 +296,7 @@ export default async function TechnologyDetailPage({ params }: PageProps) {
               Need an Enterprise Solution Powered by {tech.name}?
             </h2>
             <p className="text-[16px] sm:text-[18px] text-white/90 max-w-[750px] mx-auto mb-8 leading-[1.7]">
-              Connect with senior architects at Green Knights of Tech &amp; AI Ltd to discuss your technical architecture and project requirements.
+              Connect with senior architects at Green Knights of Tech &amp; AI to discuss your technical architecture and project requirements.
             </p>
             <Link
               href="/#contact"

@@ -91,7 +91,7 @@ export const itConsulting: ServiceData = {
   relatedSlugs: ["digital-transformation", "cybersecurity", "cloud-solutions"],
   seo: {
     metaTitle: "Strategic IT Consulting & Fractional CTO | Green Knights",
-    metaDescription: "Drive growth with Fractional CTO advisory, technical due diligence, and enterprise IT strategy from Green Knights of Tech & AI Ltd.",
+    metaDescription: "Drive growth with Fractional CTO advisory, technical due diligence, and enterprise IT strategy from Green Knights of Tech & AI.",
     keywords: ["IT Consulting", "Fractional CTO", "Technical Due Diligence", "Enterprise IT Strategy", "Architecture Audit"],
   },
 };

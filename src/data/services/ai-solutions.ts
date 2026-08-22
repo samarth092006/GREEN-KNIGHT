@@ -179,7 +179,7 @@ export const aiSolutions: ServiceData = {
   relatedSlugs: ["software-development", "cloud-solutions", "data-analytics"],
   seo: {
     metaTitle: "Enterprise AI Solutions & Generative Intelligence | Green Knights",
-    metaDescription: "Transform your enterprise with private LLMs, autonomous AI agents, and RAG architectures engineered by Green Knights of Tech & AI Ltd.",
+    metaDescription: "Transform your enterprise with private LLMs, autonomous AI agents, and RAG architectures engineered by Green Knights of Tech & AI.",
     keywords: ["Enterprise AI Solutions", "Generative AI", "Private LLM Fine-tuning", "RAG Architecture", "Agentic Workflows"],
   },
 };
